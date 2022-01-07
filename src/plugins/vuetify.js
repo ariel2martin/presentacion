@@ -2,14 +2,15 @@ import Vue from 'vue';
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 import es from 'vuetify/lib/locale/es';
-
+import colors from 'vuetify/lib/util/colors';
 Vue.use(Vuetify);
 
 export default new Vuetify({
   theme: {
-      options: {
-        customProperties: true,
-      },
+    dark: true,
+    options: {
+      customProperties: true,
+    },
     themes: {
       light: {
         primary: '#007BFF',
@@ -20,10 +21,13 @@ export default new Vuetify({
         success: '#4CAF50',
         warning: '#FFC107'
       },
+      dark: {
+        primary: colors.blue.lighten3,
+      },
     },
   },
-    lang: {
-      locales: { es },
-      current: 'es',
-    },
+  lang: {
+    locales: { es },
+    current: 'es',
+  },
 });
