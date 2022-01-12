@@ -12,9 +12,14 @@
 </template>
 
 <script>
+import DemoSendValues from "@/components/DemoSendValues.vue";
+import DemoReciveGrafico from "@/components/DemoReciveGrafico.vue";
 export default {
-  name: "index",
-  layout: "demo",
+  name: "graficoDinamico",
+  components: {
+    DemoSendValues,
+    DemoReciveGrafico,
+  },
   data() {
     return {};
   },
@@ -25,7 +30,7 @@ export default {
   methods: {},
 };
 </script>
-<style lang="scss">
+<style>
 .theme--dark.v-card {
   background-color: #27293d;
   color: rgba(255, 255, 255, 0.1);

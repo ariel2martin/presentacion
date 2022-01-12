@@ -1,11 +1,10 @@
 <template>
   <v-app>
-    <v-navigation-drawer app class="fondito" v-model="drawer">
+    <v-navigation-drawer app class="fondito" v-model="drawer" temporary>
       <perfect-scrollbar>
         <v-icon
           small
-          disabled
-          style="margin-left: 92%"
+          style="margin-left: 92%; color: grey"
           @click="drawer = !drawer"
         >
           mdi-close
@@ -43,98 +42,57 @@
             </v-list-item>
           </v-list-item-group>
         </v-list>
+
+        <v-list>
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title>
+                <span>Menu</span>
+              </v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          <v-divider></v-divider>
+
+          <template v-for="(item, index) in items">
+            <v-list-item
+              :href="item.href"
+              :to="{ name: item.href }"
+              :key="index"
+            >
+              <v-list-item-action>
+                <v-icon light v-html="item.icon"></v-icon>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title v-html="item.title"></v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </template>
+        </v-list>
       </perfect-scrollbar>
     </v-navigation-drawer>
 
     <v-app-bar app>
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-      <v-toolbar-title>Demo2</v-toolbar-title>
+      <v-toolbar-title>Demo</v-toolbar-title>
     </v-app-bar>
 
     <v-main>
-      <!--  -->
-      <div>
-        <perfect-scrollbar>
+      <v-fade-transition mode="out-in">
+        <div>
+          <h1>Hello App34!</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
+            <!-- use router-link component for navigation. -->
+            <!-- specify the link by passing the `to` prop. -->
+            <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
+            <router-link to="/about">Go to Foo</router-link>
+            <router-link to="/vacio">Go to Bar</router-link>
           </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-          </p>
-        </perfect-scrollbar>
-      </div>
-      <router-view />
+          <!-- route outlet -->
+          <!-- component matched by the route will render here -->
+          <router-view></router-view>
+        </div>
+      </v-fade-transition>
     </v-main>
   </v-app>
 </template>
@@ -142,16 +100,21 @@
 <script>
 export default {
   data: () => ({
-    drawer: true,
+    drawer: false,
     selectedItem: 0,
     items: [
-      { text: "My Files", icon: "mdi-folder" },
-      { text: "Shared with me", icon: "mdi-account-multiple" },
-      { text: "Starred", icon: "mdi-star" },
-      { text: "Recent", icon: "mdi-history" },
-      { text: "Offline", icon: "mdi-check-circle" },
-      { text: "Uploads", icon: "mdi-upload" },
-      { text: "Backups", icon: "mdi-cloud-upload" },
+      {
+        href: "/graficoDinamico",
+        router: true,
+        text: "Gráfico dinámico",
+        icon: "mdi-folder",
+      },
+      {
+        href: "inspire",
+        router: true,
+        text: "Shared with me",
+        icon: "mdi-account-multiple",
+      },
     ],
   }),
 };

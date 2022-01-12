@@ -10,7 +10,7 @@ import PerfectScrollbar from "vue2-perfect-scrollbar";
 import "vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css";
 Vue.use(PerfectScrollbar);
 Vue.config.productionTip = false;
-
+export const nuxt = new Vue({});
 new Vue({
   router,
   store,
@@ -19,4 +19,4 @@ new Vue({
   render: h => h(App)
 }).$mount('#app');
 
-export const nuxt = new Vue({});
+
