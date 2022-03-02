@@ -146,10 +146,13 @@ export default {
   },
 };
 </script>
+
 <style scoped lang="scss">
+@use "sass:math";
+@import "./configuraciones.scss";
 body {
   font-family: "Mada", sans-serif;
-  background: $FondoDark;
+  background: $background;
 }
 
 #app {
@@ -157,7 +160,7 @@ body {
   max-width: 400px;
   margin: 30px auto;
   display: table;
-  background: $FondoDark;
+  background: $background;
 }
 
 span {
@@ -202,7 +205,7 @@ select {
 
 $amt: 350px;
 $max: 40;
-$color: 300 / $max;
+$color: math.div(300, $max);
 
 @for $i from 1 through $max {
   .bars:nth-child(#{$i}) rect {

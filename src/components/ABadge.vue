@@ -4,9 +4,8 @@
   </component>
 </template>
 <script>
-import config from "../../configuraciones.js";
 export default {
-  name: "badge",
+  name: "Abadge",
   props: {
     tag: {
       type: String,
@@ -15,7 +14,7 @@ export default {
     },
     type: {
       type: String,
-      default: "default",
+      default: "primary",
       validator: (value) => {
         let acceptedValues = [
           "primary",
@@ -23,16 +22,15 @@ export default {
           "success",
           "warning",
           "danger",
-          "default",
         ];
         return acceptedValues.indexOf(value) !== -1;
       },
-      description: "Badge type (primary|info|success|warning|danger|default)",
+      description: "Badge type (primary|info|success|warning|danger)",
     },
   },
 };
 </script>
-<style lang="scss">
+<style scoped lang="scss">
 @import "./configuraciones.scss";
 .badge {
   text-transform: uppercase;
@@ -78,6 +76,30 @@ export default {
 .badge-success {
   color: color-yiq(darken($success, 10%));
   background-color: darken($success, 10%);
+
+  .tagsinput-remove-link {
+    color: white;
+  }
+}
+.badge-info {
+  color: color-yiq(darken($info, 10%));
+  background-color: darken($info, 10%);
+
+  .tagsinput-remove-link {
+    color: white;
+  }
+}
+.badge-warning {
+  color: color-yiq(darken($warning, 10%));
+  background-color: darken($warning, 10%);
+
+  .tagsinput-remove-link {
+    color: white;
+  }
+}
+.badge-danger {
+  color: color-yiq(darken($danger, 10%));
+  background-color: darken($danger, 10%);
 
   .tagsinput-remove-link {
     color: white;

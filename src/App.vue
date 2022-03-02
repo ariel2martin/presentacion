@@ -30,8 +30,13 @@
         </v-list>
         <v-divider></v-divider>
         <v-list nav dense>
-          <v-list-item-group v-model="selectedItem" color="primary">
-            <v-list-item v-for="(item, i) in items" :key="i">
+          <v-list-item-group
+            v-model="selectedItem"
+            color="primary"
+            v-for="(item, i) in items"
+            :key="i"
+          >
+            <v-list-item :href="item.href" :to="{ name: item.href }" :key="i">
               <v-list-item-icon>
                 <v-icon v-text="item.icon"></v-icon>
               </v-list-item-icon>
@@ -41,32 +46,6 @@
               </v-list-item-content>
             </v-list-item>
           </v-list-item-group>
-        </v-list>
-
-        <v-list>
-          <v-list-item>
-            <v-list-item-content>
-              <v-list-item-title>
-                <span>Menu</span>
-              </v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          <v-divider></v-divider>
-
-          <template v-for="(item, index) in items">
-            <v-list-item
-              :href="item.href"
-              :to="{ name: item.href }"
-              :key="index"
-            >
-              <v-list-item-action>
-                <v-icon light v-html="item.icon"></v-icon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title v-html="item.title"></v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </template>
         </v-list>
       </perfect-scrollbar>
     </v-navigation-drawer>
@@ -79,19 +58,7 @@
 
     <v-main>
       <v-fade-transition mode="out-in">
-        <div>
-          <h1>Hello App34!</h1>
-          <p>
-            <!-- use router-link component for navigation. -->
-            <!-- specify the link by passing the `to` prop. -->
-            <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
-            <router-link to="/about">Go to Foo</router-link>
-            <router-link to="/vacio">Go to Bar</router-link>
-          </p>
-          <!-- route outlet -->
-          <!-- component matched by the route will render here -->
-          <router-view></router-view>
-        </div>
+        <router-view />
       </v-fade-transition>
     </v-main>
   </v-app>
@@ -104,15 +71,27 @@ export default {
     selectedItem: 0,
     items: [
       {
-        href: "/graficoDinamico",
+        href: "GraficoDinamico",
         router: true,
         text: "Gráfico dinámico",
         icon: "mdi-folder",
       },
       {
-        href: "inspire",
+        href: "GraficoEjemplo",
         router: true,
-        text: "Shared with me",
+        text: "Ejemplo de gráfico",
+        icon: "mdi-account-multiple",
+      },
+      {
+        href: "tabla",
+        router: true,
+        text: "Table",
+        icon: "mdi-account-multiple",
+      },
+      {
+        href: "Asign",
+        router: true,
+        text: "Aplicar",
         icon: "mdi-account-multiple",
       },
     ],

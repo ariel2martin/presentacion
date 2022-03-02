@@ -1,20 +1,22 @@
 <template>
   <div>
-    <v-card style="width: 35rem">
+    <v-card style="width: 32rem">
       <v-card-title>
         <v-container>
           <v-row>
-            <h6 class="body-2 grey--text text--lighten-1">Temperatura</h6>
+            <h6 class="body-2 grey--text text--lighten-1">Temperature</h6>
           </v-row>
           <v-row>
             <v-col>
               <h3 class="headline">
-                <v-icon color="blue darken-2">fas fa-wifi</v-icon>
+                <v-icon color="blue darken-2">mdi-wifi</v-icon>
                 {{ mac }}
               </h3>
             </v-col>
             <v-col>
               <ABadge class="pa-2" type="success">{{ v_mide }}</ABadge>
+              &nbsp;
+              <ABadge class="pa-2" type="info">{{ puerta }}</ABadge>
             </v-col>
           </v-row>
         </v-container>
@@ -59,17 +61,23 @@ let chartOptions = {
 
 export default {
   middleware: "authenticated",
-  layout: "admin",
+  name: "DemoReciveGrafico",
   components: {
     LineChart,
     ABadge,
   },
-  props: ["cual", "chartId"],
+
+  props: {
+    cual: String,
+    chartId: String,
+  },
   data() {
     return {
       mac: JSON.parse(JSON.stringify(this.cual)),
       deviceSubscribeMide:
         "ssos/" + JSON.parse(JSON.stringify(this.cual)) + "/temp/mide",
+      deviceSubscribePuerta:
+        "ssos/" + JSON.parse(JSON.stringify(this.cual)) + "/temp/puerta",
       valores: [],
       etiquetas: [],
       ultimamedicion: {},
@@ -172,9 +180,18 @@ export default {
 
         this.updateChart(sp[0].replace('"', ""), sp[1], sp[2].replace('"', ""));
       });
+
+      nuxt.$on(this.deviceSubscribePuerta, (message) => {
+        if (message == '"Trend"' || message == "Trend") {
+          this.puerta = "Trend";
+        } else {
+          this.puerta = "";
+        }
+      });
     },
     desubscribirse() {
-      this.$off(this.deviceSubscribeMide);
+      nuxt.$off(this.deviceSubscribeMide);
+      nuxt.$off(this.deviceSubscribePuerta);
     },
     updateChart(valor, min, max) {
       valor = Number(valor);

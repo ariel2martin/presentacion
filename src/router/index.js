@@ -1,43 +1,51 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
-import Vacio from '../views/Vacio.vue';
-import GraficoDinamico from '../views/GraficoDinamico.vue';
+import Vue from "vue";
+import VueRouter from "vue-router";
+
+import GraficoDinamico from "../views/GraficoDinamico.vue";
+import GraficoEjemplo from "../views/GraficoEjemplo.vue";
+import FileSelect from "../views/FileSelect.vue";
+
 Vue.use(VueRouter);
-
-
-
 
 const routes = [
   {
+    path: "/FileSelect",
+    name: "FileSelect",
+    component: FileSelect,
+  },
+  {
+    path: "/GraficoEjemplo",
+    name: "GraficoEjemplo",
+    component: GraficoEjemplo,
+  },
 
-    path: '/',
-    name: 'Home',
-    component: Home
+  {
+    path: "/graficoDinamico",
+    name: "GraficoDinamico",
+    component: GraficoDinamico,
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
+    path: "/",
+    name: "home",
+    component: GraficoDinamico,
   },
   {
-    path: '/vacio',
-    name: 'Vacio',
-    component: Vacio
+    path: "/Tabla",
+    name: "tabla",
+    component: () =>
+      import(/* webpackChunkName: "datos"*/ "../views/Tabla.vue"),
+  }, {
+    path: "/Asign",
+    name: "Asign",
+    component: () =>
+      import(/* webpackChunkName: "datos"*/ "../views/Asign.vue"),
   },
-  {
-    path: '/graficoDinamico',
-    name: 'GraficoDinamico',
-    component: GraficoDinamico
-  }
-
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;

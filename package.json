@@ -1,5 +1,5 @@
 {
-  "name": "vuetify2",
+  "name": "Demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,11 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
     "@mdi/font": "5.9.55",
+    "axios": "^0.24.0",
     "chart.js": "2.7.1",
     "core-js": "^3.6.5",
+    "gsap": "1.19",
+    "lodash": "^4.17.21",
     "roboto-fontface": "*",
     "sass-loader": "^10",
     "vue": "^2.6.11",

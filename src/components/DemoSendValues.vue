@@ -1,7 +1,7 @@
 <template>
   <v-card style="width: 320px">
     <v-card-title class="body-1"
-      >Send values, can be changed by hand</v-card-title
+      >It sends values, try changing them</v-card-title
     >
 
     <v-card-text>
@@ -13,7 +13,7 @@
                 hide-details="auto"
                 type="number"
                 v-model="mide"
-                :messages="errorvalor"
+                :error-messages="errorvalor"
                 label="Start"
                 class="body-1"
               />
@@ -23,7 +23,7 @@
                 hide-details="auto"
                 type="number"
                 v-model="minimo"
-                :messages="errormin"
+                :error-messages="errormin"
                 label="Min"
                 class="body-1"
               />
@@ -33,7 +33,7 @@
                 hide-details="auto"
                 type="number"
                 v-model="maximo"
-                :messages="errormax"
+                :error-messages="errormax"
                 label="Max"
                 class="body-1"
               />
@@ -46,7 +46,7 @@
                 type="number"
                 v-model="tempAmbiente"
                 :disabled="desabilitado"
-                :messages="errorambiente"
+                :error-messages="errorambiente"
                 label="Trend"
                 class="body-1"
               />
@@ -57,8 +57,19 @@
                 type="number"
                 v-model="probableAperturaPuerta"
                 :disabled="desabilitado"
-                :messages="errorprobtemp"
-                label="Probability"
+                :error-messages="errorprobpuerta"
+                label="Prob1 %"
+                class="body-1"
+              />
+            </v-flex>
+            <v-flex pa-4>
+              <v-text-field
+                hide-details="auto"
+                type="number"
+                v-model="probableCambioTemp"
+                :disabled="desabilitado"
+                :error-messages="errorprobtemp"
+                label="Prob2 %"
                 class="body-1"
               />
             </v-flex>
@@ -67,7 +78,7 @@
           <v-layout>
             <v-flex pa-4>
               <v-btn
-                color="primary"
+                color="success"
                 @click="start()"
                 elevation="2"
                 block
@@ -78,7 +89,7 @@
             </v-flex>
             <v-flex pa-4>
               <v-btn
-                color="primary"
+                color="success"
                 @click="detener()"
                 elevation="2"
                 block
@@ -98,17 +109,19 @@ import { nuxt } from "../main";
 var setInterval1;
 var setInterval2;
 export default {
-  layout: "demo",
+  name: "DemoSendValues",
 
   components: {},
-  props: ["cual"],
+  props: {
+    cual: String,
+  },
   data() {
     return {
       desabilitado: false,
       mac: JSON.parse(JSON.stringify(this.cual)),
       deviceSubscribeMide: "",
 
-      mide: 3,
+      mide: 5,
       minimo: -10,
       maximo: 10,
       deviceSubscribeTminSet: "",
@@ -117,8 +130,8 @@ export default {
       tempAmbiente: 25,
       velMedicion: 1,
       deviceSubscribePuerta: "",
-      puerta: "cerrada",
-      probableAperturaPuerta: 50,
+      puerta: "Normal",
+      probableAperturaPuerta: 75,
 
       errorvelocidad: "",
       errorambiente: "",
@@ -133,23 +146,8 @@ export default {
   methods: {
     start() {
       this.desabilitado = true;
-
-      //ex topic: "userid/did/variableId/sdata"
       this.deviceSubscribeMide = "ssos/" + this.mac + "/temp/mide";
       this.deviceSubscribePuerta = "ssos/" + this.mac + "/temp/puerta";
-      this.deviceSubscribeTminSet = "ssos/" + this.mac + "/temp/TminSet";
-      this.deviceSubscribeTmaxSet = "ssos/" + this.mac + "/temp/TmaxSet";
-
-      nuxt.$on(this.deviceSubscribePuerta, (message) => {
-        this.puerta = this.replaceAll(message.toString(), '"', "");
-      });
-      nuxt.$on(this.deviceSubscribeTminSet, (message) => {
-        this.minimo = parseInt(this.replaceAll(message.toString(), '"', ""));
-      });
-      nuxt.$on(this.deviceSubscribeTmaxSet, (message) => {
-        this.maximo = parseInt(this.replaceAll(message.toString(), '"', ""));
-      });
-
       this.enviamedicion();
       this.enviaPuerta();
       setInterval1 = setInterval(this.enviamedicion, this.velMedicion * 1000);
@@ -159,27 +157,27 @@ export default {
       let huboerror = false;
       this.errorvelocidad = "";
       if (isNaN(this.velMedicion) || this.velMedicion.length < 1) {
-        this.errorvelocidad = "no es numero";
+        this.errorvelocidad = "number";
         huboerror = true;
       }
       this.errorambiente = "";
       if (isNaN(this.tempAmbiente) || this.tempAmbiente.length < 1) {
-        this.errorambiente = true;
+        this.errorambiente = "number";
         huboerror = true;
       }
       this.errorvalor = "";
       if (isNaN(this.mide) || this.mide.length < 1) {
-        this.errorvalor = "no es numero";
+        this.errorvalor = "number";
         huboerror = true;
       }
       this.errormin = "";
       if (isNaN(this.minimo) || this.minimo.length < 1) {
-        this.errormin = "no es numero";
+        this.errormin = "number";
         huboerror = true;
       }
       this.errormax = "";
       if (isNaN(this.maximo) || this.maximo.length < 1) {
-        this.errormax = "no es numero";
+        this.errormax = "number";
         huboerror = true;
       }
       this.errorprobtemp = "";
@@ -187,7 +185,7 @@ export default {
         isNaN(this.probableCambioTemp) ||
         this.probableCambioTemp.length < 1
       ) {
-        this.errorprobtemp = "no es numero";
+        this.errorprobtemp = "number";
         huboerror = true;
       }
       this.errorprobpuerta = "";
@@ -195,10 +193,11 @@ export default {
         isNaN(this.probableAperturaPuerta) ||
         this.probableAperturaPuerta.length < 1
       ) {
-        this.errorprobpuerta = "no es numero";
+        this.errorprobpuerta = "number";
         huboerror = true;
       }
       if (huboerror) {
+        this.detener();
         return;
       }
       if (this.velMedicion < 1) {
@@ -218,16 +217,16 @@ export default {
         this.probableAperturaPuerta = 0;
       }
       if (this.probableAperturaPuerta == 0) {
-        this.puerta = "cerrada";
+        this.puerta = "Normal";
       }
-      if (this.puerta == "cerrada") {
+      if (this.puerta == "Normal") {
         if (Math.floor(Math.random() * 100 <= this.probableCambioTemp)) {
           this.mide = parseFloat(
             parseFloat(this.mide) + (Math.round(Math.random() * 10) - 5)
           ).toFixed(0);
         }
       }
-      if (this.puerta == "abierta") {
+      if (this.puerta == "Trend") {
         let t = Math.round(Math.random() * 10) - 5;
         if (
           (this.mide < this.tempAmbiente && t > 0) ||
@@ -241,16 +240,12 @@ export default {
       nuxt.$emit(this.deviceSubscribeMide, JSON.stringify(mensaje));
     },
     enviaPuerta() {
-      if (this.puerta == "cerrada") {
-        if (Math.floor(Math.random() * 100 <= this.probableAperturaPuerta)) {
-          this.puerta = "abierta";
-          nuxt.$emit(this.deviceSubscribePuerta, "abierta");
-        }
+      if (Math.floor(Math.random() * 100 <= this.probableAperturaPuerta)) {
+        this.puerta = "Trend";
+        nuxt.$emit(this.deviceSubscribePuerta, "Trend");
       } else {
-        if (Math.floor(Math.random() * 100 <= this.probableAperturaPuerta)) {
-          this.puerta = "cerrada";
-          nuxt.$emit(this.deviceSubscribePuerta, "cerrada");
-        }
+        this.puerta = "Normal";
+        nuxt.$emit(this.deviceSubscribePuerta, "Normal");
       }
     },
     detener() {
