@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Aplica Pagos</title>
+	<script src="traido/jquery-1.9.1.min.js"></script>
+
+	<script type="text/javascript">
+		var _startX = 0;
+		var _startY = 0;
+		var _InicTextX = 0;
+		var _InicTextY = 0;
+		var _id = 0;
+		var _iddestino = 0;
+		var _dragElement;
+		var _oldZIndex = 0;
+
+
+
+	</script>
+	<style>
+		.drag {
+			cursor: move;
+		}
+
+		.Pago {
+			position: absolute;
+			border: 1px solid #ff8000;
+			border-radius: 37px;
+			vertical-align: middle;
+			text-shadow: 0 1px 0 #fff;
+			height: 28px;
+			font-style: oblique;
+			box-shadow: 2px 0 10px #9d9d9d;
+			background: #ffcc00;
+			background: -moz-linear-gradient(top, #ffcc00 0%, #ff8000 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffcc00), color-stop(100%, #ff8000));
+			background: -webkit-linear-gradient(top, #ffcc00 0%, #ff8000 100%);
+			background: -o-linear-gradient(top, #ffcc00 0%, #ff8000 100%);
+			background: -ms-linear-gradient(top, #ffcc00 0%, #ff8000 100%);
+			background: linear-gradient(top, #ffcc00 0%, #ff8000 100%);
+		}
+
+		.NC {
+			position: absolute;
+			border: 1px solid #ffcc00;
+			border-radius: 37px;
+			vertical-align: middle;
+			text-shadow: 0 1px 0 #fff;
+			height: 28px;
+			box-shadow: 2px 0 10px #9d9d9d;
+			background: #ff8000;
+			background: -moz-linear-gradient(top, #ffffff 0%, #ff8000 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8000), color-stop(100%, #ffffff));
+			background: -webkit-linear-gradient(top, #ff8000 0%, #ffffff 100%);
+			background: -o-linear-gradient(top, #ff8000 0%, #ffffff 100%);
+			background: -ms-linear-gradient(top, #ff8000 0%, #ffffff 100%);
+			background: linear-gradient(top, #ff8000 0%, #ffffff 100%);
+		}
+
+		.positivo {
+			position: absolute;
+			border: 1px solid #0E32DE;
+			border-radius: 37px;
+			vertical-align: middle;
+			text-shadow: 0 1px 0 #000;
+			height: 28px;
+			box-shadow: 2px 0 10px #9d9d9d;
+		}
+
+		.Factura {
+			font-style: oblique;
+			background: #3299E4;
+		}
+
+		.PagoRevertido {
+			box-shadow: 2px 0 10px #9d9d9d;
+			background: #4676F4;
+		}
+
+		#nada {
+			background: -moz-linear-gradient(top, #3299E4 0%, #4676F4 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3299E4), color-stop(100%, #4676F4));
+			background: -webkit-linear-gradient(top, #3299E4 0%, #4676F4 100%);
+			background: -o-linear-gradient(top, #3299E4 0%, #4676F4 100%);
+			background: -ms-linear-gradient(top, #3299E4 0%, #4676F4 100%);
+			background: linear-gradient(top, #3299E4 0%, #4676F4 100%);
+
+			background: -moz-linear-gradient(top, #ffffff 0%, #4676F4 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4676F4), color-stop(100%, #ffffff));
+			background: -webkit-linear-gradient(top, #4676F4 0%, #ffffff 100%);
+			background: -o-linear-gradient(top, #4676F4 0%, #ffffff 100%);
+			background: -ms-linear-gradient(top, #4676F4 0%, #ffffff 100%);
+			background: linear-gradient(top, #4676F4 0%, #ffffff 100%);
+
+			text-align: center;
+		}
+
+		.ubicado {
+			background: gray;
+			box-shadow: 2px 0 10px light-gray;
+		}
+
+		.titulo {
+			position: absolute;
+			background: #0FF;
+			background: -moz-linear-gradient(top, #0FF 0%, #09F 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0FF), color-stop(100%, #09F));
+			background: -webkit-linear-gradient(top, #0FF 0%, #09F 100%);
+			background: -o-linear-gradient(top, #0FF 0%, #09F 100%);
+			background: -ms-linear-gradient(top, #0FF 0%, #09F 100%);
+			background: linear-gradient(top, #0FF 0%, #09F 100%);
+		}
+	</style>
+</head>
+
+<body bgcolor="#939393">
+
+	<div id="grabando" style="font-style:!important;color:#0F0;display:none;position:absolute;left:99px;top:99px;">
+		Grabando....</div>
+	<div id="aux" style="display:none;"></div>
+
+	<table width="1000" border="0">
+		<tr>
+			<th scope="col">
+				CERO
+			</th>
+			<th scope="col">
+				UNO
+			</th>
+			<th scope="col">
+				DOS
+			</th>
+			<td scope="col">
+				TRES
+			</td>
+		</tr>
+		<tr>
+			<td align="right">Limite de credito:</td>
+			<td>
+				CUATRO
+			</td>
+			<td align="right">Deuda:</td>
+			<td>
+				CINCO
+			</td>
+		</tr>
+	</table>
+	<div id="herrsuma"
+		style="font-style:!important;color:#0F0;display:none;position:absolute;left:110>px;top:110px;z-index:10;">
+		<img src="traido/purple-swirling-animation.gif" width="160" height="60" style="z-index:9;">
+		<table width="160" border="1" style="position:relative;top:-63px;left:0px;">
+			<tr>
+				<th colspan="2" scope="col">
+					<div id="sumtotal">0</div>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<div id="sumNEG">0</div>
+				</td>
+				<td>
+					<div id="sumPOS">0</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<br><br>
+
+
+
+	<div id="escritorio">
+		<canvas id="elcanvvas" width="1000" height="1000"
+			style="position:absolute;top:0px;left:0px;border:0px solid #d3d3d3;">Your browser does not
+			support the HTML5 Solo podrá aplicar comprobantes de montos iguales</canvas>
+		<div id='tituloNEG' class='titulo' style="left:133px;top:25px;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Factura/Remito&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fecha
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Original
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abierto&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+		<div id='tituloPOS' class='titulo' style="left:133px;top:25px;">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abierto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Fecha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Original&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Remito&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Factura&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+
+
+		<div id=' NEG' class=clase' style="left:99px;top:99px;widht:
+								333px;" data-invkey="nose" data-mopen="mopen" data-mopendec="mopendec" data-payid="payid">
+			&nbsp;&nbsp;
+			aquielnumeroID
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			fecha
+			amt
+
+			&nbsp;&nbsp;
+			bbb
+			&nbsp;
+			aaa
+			&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+		<div id='NEGop' style="position:absolute;left:107>px;top:99px;">
+			&nbsp;</div>
+
+		<div id=' POSop' style="position:absolute;top:99px">&nbsp;
+		</div>
+		<div id='POS' class='positivo clase' style="left:99px;top:99px;width:333px;" data-invkey="" data-mopen="mopen"
+			data-mopendec="
+			mopendec" data-payid="payid" data-ubicado="no">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+
+			&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+
+	</div>
+	<script language="javascript">
+		$(document).ready(function () {
+			//inicioCanvas();
+			InitDragDrop();
+			$('body').keydown(function (e) {
+				if (e.which == 17) {
+					$("#herrsuma").css("display", "inline");
+				};
+				$(".drag").bind('click.sumar', function () {
+					var elegido = $(this);
+					if (new Date() - 1000 < $(this).data("registro")) {
+						//	alert('nada');  lo hago de esta forma para evitar manejar 'undefined'
+					}
+					else {
+						var auxNEG = parseInt(elegido.attr('data-mopen')) + (-1) * parseInt(elegido.attr('data-mopendec')) / 100;
+						$(this).data("registro", new Date());
+						if (elegido.data("sumado") != 1) {
+							elegido.data("sumado", 1);
+							var offset = ExtractNumber(elegido.css("left"));
+							elegido.css("left", offset + 60);
+							$("#sumtotal").text(parseFloat(parseFloat($("#sumtotal").text()) + auxNEG).toFixed(2));
+							$("#sumNEG").text(parseFloat(parseFloat($("#sumNEG").text()) + auxNEG).toFixed(2));
+						}
+						else {
+							elegido.data("sumado", 0);
+							var offset = ExtractNumber(elegido.css("left"));
+							elegido.css("left", offset - 60);
+							$("#sumtotal").text(parseFloat(parseFloat($("#sumtotal").text()) - auxNEG).toFixed(2));
+							$("#sumNEG").text(parseFloat(parseFloat($("#sumNEG").text()) - auxNEG).toFixed(2));
+						}
+
+					}
+					//if ('A'+$(this).data("registro") == 'Aundefined' ){alert(333333333);}
+					//else {alert('A'+elegido.data("registro"));}
+					//elegido.removeClass("drag");
+
+				});
+				$(".Factura , .PagoRevertido").bind('click.sumar', function () {
+					var elegido = $(this);
+					if (new Date() - 1000 < $(this).data("registro")) {
+						//	alert('nada');  lo hago de esta forma para evitar manejar 'undefined'
+					}
+					else {
+						var auxPOS = parseInt(elegido.attr('data-mopen')) + parseInt(elegido.attr('data-mopendec')) / 100;
+						$(this).data("registro", new Date());
+						if (elegido.data("sumado") != 1) {
+							elegido.data("sumado", 1);
+							var offset = ExtractNumber(elegido.css("left"));
+							elegido.css("left", offset - 60);
+							$("#sumtotal").text(parseFloat(parseFloat($("#sumtotal").text()) + auxPOS).toFixed(2));
+							$("#sumPOS").text(parseFloat(parseFloat($("#sumPOS").text()) + auxPOS).toFixed(2));
+						}
+						else {
+							elegido.data("sumado", 0);
+							var offset = ExtractNumber(elegido.css("left"));
+							elegido.css("left", offset + 60);
+							$("#sumtotal").text(parseFloat(parseFloat($("#sumtotal").text()) - auxPOS).toFixed(2));
+							$("#sumPOS").text(parseFloat(parseFloat($("#sumPOS").text()) - auxPOS).toFixed(2));
+						}
+
+
+					}
+
+				});
+
+
+			});
+			$('body').keyup(function (e) {
+				$("#herrsuma").css("display", "none");
+				$(".drag").unbind('click.sumar');
+				$(".PagoRevertido").unbind('click.sumar');
+				$(".Factura").unbind('click.sumar');
+			});
+
+
+		});
+		function InitDragDrop() {
+			document.onmousedown = OnMouseDown;
+			document.onmouseup = OnMouseUp;
+			$(".Factura,.PagoRevertido").mouseover(function (e) {
+				if (e == null) e = window.event;
+				var target = e.target != null ? e.target : e.srcElement;
+				var cual = Right(target.id, target.id.length - 3);
+				id = parseInt(cual);
+				if (id != _iddestino && Right(target.className, 7) != 'ubicado') {
+					_iddestino = id;
+					$("#POS" + _iddestino).css("background", "lightgray");
+				};
+			});
+			$(".Factura").mouseout(function () {
+				$("#POS" + _iddestino).css("background", "#3299E4");
+				_iddestino = 0;
+			});
+			$(".PagoRevertido").mouseout(function () {
+				$("#POS" + _iddestino).css("background", "#4676F4");
+				_iddestino = 0;
+			});
+		}
+
+		function OnMouseDown(e) {
+			if (e == null) e = window.event;
+			var target = e.target != null ? e.target : e.srcElement;
+			if ((e.button == 1 && window.event != null || e.button == 0) && (Left(target.className, 4) == 'drag')) {
+				var id;
+				var cual = Right(target.id, target.id.length - 3);
+				id = parseInt(cual);
+				_InicTextX = ExtractNumber($("#NEG" + id).css('left'));
+				_InicTextY = ExtractNumber($("#NEG" + id).css('top'));
+				_startX = e.clientX;
+				_startY = e.clientY;
+				_id = id;
+				_oldZIndex = target.style.zIndex;
+				_dragElement = target;
+				document.onmousemove = OnMouseMove;
+				document.body.focus();
+				document.onselectstart = function () { return false; };
+				target.ondragstart = function () { return false; };
+				return false;
+			}
+		}
+		function OnMouseMove(e) {
+			if (e == null)
+				var e = window.event;
+			//_dragElement.style.left = (_InicIconX + e.clientX - _startX) + 'px';
+			//_dragElement.style.top = (_InicIconY + e.clientY - _startY) + 'px';
+			var id = _id;
+			$("#NEG" + id).css({ 'left': (_InicTextX + e.clientX - _startX) + 'px', 'top': (_InicTextY + e.clientY - _startY) + 'px', 'zIndex': _oldZIndex });
+		};
+		function OnMouseUp(e) {
+			if (_dragElement != null) {
+				var iddestino = _iddestino;
+				var id = _id;
+				if (iddestino == 0) {
+					// no se asoció NEG a POS, vuelvo a las coordenadas originales
+					$("#NEG" + id).css({ 'left': (_InicTextX) + 'px', 'top': (_InicTextY) + 'px', 'zIndex': 00 });
+				}
+				else {
+					var mopenPOS = parseInt($("#POS" + iddestino).attr('data-mopen'));
+					var mopenNEG = parseInt($("#NEG" + id).attr('data-mopen'));
+					var mopendecPOS = parseInt($("#POS" + iddestino).attr('data-mopendec'));
+					var mopendecNEG = parseInt($("#NEG" + id).attr('data-mopendec'));
+					aplica(id, iddestino);
+					if ((mopenPOS == (-1) * mopenNEG) && (mopendecPOS == mopendecNEG) && $("#NEGop" + id).text().length < 2 && $("#POSop" + iddestino).text().length < 2) {
+						$("#NEG" + id).removeClass("drag").addClass("ubicado");
+						$("#NEG" + id).css("zIndex", 2);
+						$("#NEG" + id).css("left", 222 - 160);
+						var elotro = $("#POS" + iddestino).css("top");
+						$("#NEG" + id).css("top", elotro);
+						$("#POS" + iddestino).removeClass("Factura").addClass("ubicado");
+						$("#POS" + iddestino).attr('id', "UBI" + iddestino);
+					}
+					else {
+
+						$("#NEG" + id).css({ 'left': (_InicTextX) + 'px', 'top': (_InicTextY) + 'px', 'zIndex': 00 });
+						var c = document.getElementById("elcanvvas");
+						var ctx = c.getContext("2d");
+						ctx.moveTo(111 + 300 + 107, _InicTextY + 14);
+						ctx.lineTo(222 + 20, parseInt($("#POS" + iddestino).css("top")) + 14);
+						ctx.stroke();
+						var auxOpen = mopenNEG + (-1) * mopendecNEG / 100 + mopenPOS + mopendecPOS / 100;
+						var auxOpen = auxOpen.toFixed(2);
+						var t = auxOpen.length;
+						if (auxOpen > 0) {
+							$("#POSop" + iddestino).text(auxOpen);
+							$("#POSop" + iddestino).css("left", 211 - (t * 7));
+							$("#NEGop" + id).text('');
+							$("#NEG" + id).removeClass("drag").addClass("ubicado");
+							$("#POS" + iddestino).attr('data-mopen', auxOpen.substring(0, t - 3));
+							$("#POS" + iddestino).attr('data-mopendec', auxOpen.substring(t - 2, t));
+							$("#NEG" + id).attr('data-mopen', 0);
+							$("#NEG" + id).attr('data-mopendec', 0);
+						}
+						else {
+							if (auxOpen < 0) {
+								$("#NEGop" + id).text(auxOpen);
+								$("#POSop" + iddestino).text('');
+								$("#POS" + iddestino).removeClass("Factura").addClass("ubicado");
+								$("#POS" + iddestino).attr('id', "UBI" + iddestino);
+								$("#POS" + iddestino).attr('data-mopen', 0);
+								$("#POS" + iddestino).attr('data-mopendec', 0);
+								$("#NEG" + id).attr('data-mopen', auxOpen.substring(0, t - 3));
+								$("#NEG" + id).attr('data-mopendec', auxOpen.substring(t - 2, t));
+							}
+							// auxopen=0
+							else {
+								$("#NEGop" + id).text('');
+								$("#POSop" + iddestino).text('');
+								$("#POS" + iddestino).removeClass("Factura").addClass("ubicado");
+								$("#NEG" + id).removeClass("drag").addClass("ubicado");
+								$("#POS" + iddestino).attr('id', "UBI" + iddestino);
+								$("#POS" + iddestino).attr('data-mopen', 0);
+								$("#POS" + iddestino).attr('data-mopendec', 0);
+								$("#NEG" + id).attr('data-mopen', 0);
+								$("#NEG" + id).attr('data-mopendec', 0);
+							}
+						}
+						if ($("#POS" + iddestino).attr('data-payid') == 'NadaAqui') {
+							$("#POS" + iddestino).removeClass("Factura").addClass("ubicado");
+							$("#POS" + iddestino).attr('id', "UBI" + iddestino);
+						}
+
+					}
+				}
+
+				document.onselectstart = null;
+				_dragElement.ondragstart = null;
+				_dragElement = null;
+				document.onmousemove = function () { return false; };
+
+			}
+		}
+
+
+		function aplica(id, iddestino) {
+			var comprob1 = $("#NEG" + id).attr('class');
+			if (Right(comprob1, 2) == 'NC') { comprob1 = 'NC'; data1 = $("#NEG" + id).attr('data-invkey'); };
+			if (Right(comprob1, 4) == 'Pago') { comprob1 = 'Pago'; data1 = $("#NEG" + id).attr('data-payid'); };
+			var mopenNEG = parseInt($("#NEG" + id).attr('data-mopen'));
+			var mopendecNEG = parseInt($("#NEG" + id).attr('data-mopendec'));
+			var auxNEG = mopenNEG + (-1) * mopendecNEG / 100;
+
+			var comprob2 = $("#POS" + iddestino).attr('class');
+			if (Right(comprob2, 7) == 'Factura') { comprob2 = 'Factura'; data2 = $("#POS" + iddestino).attr('data-invkey'); };
+			if (Right(comprob2, 13) == 'PagoRevertido') { comprob2 = 'PagoRevertido'; data2 = $("#POS" + iddestino).attr('data-payid'); };
+			var mopenPOS = parseInt($("#POS" + iddestino).attr('data-mopen'));
+			var mopendecPOS = parseInt($("#POS" + iddestino).attr('data-mopendec'));
+			var auxPOS = mopenPOS + mopendecPOS / 100;
+			var porcion;
+			if ((-1) * auxNEG > auxPOS) { porcion = auxPOS; }
+			else { porcion = (-1) * auxNEG; }
+			//if ((-1)*auxNEG == auxPOS){ porcion=0;}  No, en la version WEB si $123 se cancelan contra -$123 la porcion cancelada no dirá 0 sino 123
+
+			var cliente = 'cliente';
+
+			var texto = "AplicaPagoClienteGraba.asp?caso1=" + comprob1 + "&caso2=" + comprob2 + "&data1=" + data1 + "&data2=" + data2 + "&cliente=" + cliente + "&POS=" + auxPOS + "&NEG=" + auxNEG + "&porcion=" + porcion;
+			if ($("#POS" + iddestino).attr('data-payid') == 'NadaAqui') {
+				//significa que estamos en presencia de una factira agrupada por stmt_num	
+				var texto = "AplicaPagoClienteGraba.asp?agrupada=1&caso1=" + comprob1 + "&data1=" + data1 + "&data2=" + data2 + "&cliente=" + cliente + "&POS=" + auxPOS + "&NegEnt=" + mopenNEG + "&NegDec=" + mopendecNEG;
+			}
+			//alert(texto);				
+			$("#grabando").css("display", "inline");
+			$("#aux").load(texto, function () { $("#grabando").css("display", "none"); });
+
+		}
+
+
+	</script>
+</body>
+
+</html>
