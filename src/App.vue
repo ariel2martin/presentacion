@@ -94,6 +94,12 @@ export default {
         text: "Aplicar",
         icon: "mdi-account-multiple",
       },
+      {
+        href: "Sorteo",
+        router: true,
+        text: "Sorteo",
+        icon: "mdi-account-multiple",
+      },
     ],
   }),
 };

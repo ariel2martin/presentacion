@@ -39,8 +39,12 @@ const routes = [
     name: "Asign",
     component: () =>
       import(/* webpackChunkName: "datos"*/ "../views/Asign.vue"),
-  },
-];
+  }, {
+    path: "/Sorteo",
+    name: "Sorteo",
+    component: () =>
+      import(/* webpackChunkName: "datos"*/ "../views/Sorteo.vue"),
+  },];
 
 const router = new VueRouter({
   mode: "history",
