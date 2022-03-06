@@ -1,6 +1,11 @@
 <template>
   <div>
     <input type="file" id="file" />
+
+    <v-btn elevation="2" color="primary" large @click="this.daNumero"
+      >Numerar
+    </v-btn>
+
     <v-data-table
       :headers="tableheader"
       :items="tableData"
@@ -12,11 +17,7 @@
         <v-toolbar flat>
           <v-toolbar-title>Expandable Table</v-toolbar-title>
           <v-spacer></v-spacer>
-          <v-switch
-            v-model="elSwitch"
-            label="Single expand"
-            class="mt-2"
-          ></v-switch>
+          <v-switch label="Single expand" class="mt-2"></v-switch>
         </v-toolbar>
       </template>
       <template v-slot:expanded-item="{ headers, item }">
@@ -31,7 +32,7 @@ export default {
   components: { ABadge },
   data() {
     return {
-      elSwitch: true,
+      listado: [],
       result: [{ name: "agua" }],
       tableheader: [
         {
@@ -62,8 +63,8 @@ export default {
 
       .addEventListener("input", this.readFile, false);
     //change
-    let qe = localStorage.getItem("listado");
-    this.llenaListado(qe);
+
+    this.listadoAgrega(JSON.parse(localStorage.getItem("listado")));
     console.log("mounted");
   },
   beforeUpdate() {
@@ -124,15 +125,34 @@ export default {
         let output = this.creaJson(lines);
         //console.log(lines);
 
-        localStorage.setItem("listado", output);
-        this.llenaListado(output);
+        this.listadoAgrega(output);
       };
       // Leemos el contenido del archivo seleccionado
       reader.readAsBinaryString(file);
     },
-    llenaListado(datos) {
-      console.log("aqui");
+    listadoAgrega(datos) {
+      this.listado.push(datos);
+      localStorage.setItem("listado", JSON.stringify(datos));
       for (var i in datos) this.tableData.push(datos[i]);
+    },
+    listadoActualiza() {
+      localStorage.setItem("listado", JSON.stringify(this.listado));
+      this.tableData = this.listado;
+    },
+
+    daNumero() {
+      console.log("mayor");
+      let mayor = 0;
+      for (let i = 0; i < this.listado.length; i++) {
+        if (this.listado[i].posicion > mayor) mayor = this.listado[i].posicion;
+      }
+
+      for (let i = 0; i < this.listado.length; i++) {
+        if (this.listado[i].posicion == undefined) {
+          this.listado[i].posicion = ++mayor;
+        }
+      }
+      this.listadoActualiza();
     },
   },
 };
