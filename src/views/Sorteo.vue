@@ -6,9 +6,12 @@
       >Numerar
     </v-btn>
 
+    <v-btn elevation="2" color="primary" large @click="this.Vaciar"
+      >Vaciar
+    </v-btn>
     <v-data-table
       :headers="tableheader"
-      :items="tableData"
+      :items="listado"
       :items-per-page="10"
       class="elevation-1"
       multi-sort
@@ -44,7 +47,6 @@ export default {
 
         { text: "num", value: "posicion" },
       ],
-      tableData: [],
     };
   },
   //{ text: "grupo", value: "grupo" },
@@ -90,28 +92,16 @@ export default {
       });
     },
 
-    reverseMatrix(matrix) {
-      let output = [];
-      // Por cada fila
-      matrix.forEach((values, row) => {
-        // Vemos los valores y su posicion
-        values.forEach((value, col) => {
-          // Si la posición aún no fue creada
-          if (output[col] === undefined) output[col] = [];
-          output[col][row] = value;
-        });
-      });
-      return output;
-    },
     creaJson(matrix) {
       let arrobj = [];
 
       for (var i in matrix) {
         var row = matrix[i];
         arrobj.push({
-          nombre: row[0],
+          nombre: row[0].trim(),
           posicion: row[1],
-          adicional: row[2],
+          grupo: row[2],
+          adicional: row[3],
         });
       }
       return arrobj;
@@ -131,17 +121,21 @@ export default {
       reader.readAsBinaryString(file);
     },
     listadoAgrega(datos) {
-      this.listado.push(datos);
-      localStorage.setItem("listado", JSON.stringify(datos));
-      for (var i in datos) this.tableData.push(datos[i]);
+      //this.listado.push(datos);
+
+      for (var i in datos) {
+        if (!this.duplicado(datos[i].nombre)) this.listado.push(datos[i]);
+      }
+      localStorage.setItem("listado", JSON.stringify(this.listado));
     },
     listadoActualiza() {
       localStorage.setItem("listado", JSON.stringify(this.listado));
-      this.tableData = this.listado;
     },
-
+    Vaciar() {
+      this.listado = [];
+      localStorage.setItem("listado", JSON.stringify(this.listado));
+    },
     daNumero() {
-      console.log("mayor");
       let mayor = 0;
       for (let i = 0; i < this.listado.length; i++) {
         if (this.listado[i].posicion > mayor) mayor = this.listado[i].posicion;
@@ -153,6 +147,13 @@ export default {
         }
       }
       this.listadoActualiza();
+    },
+    duplicado(nombr) {
+      if (this.listado.find((e) => e.nombre == nombr) == undefined) {
+        return false;
+      } else {
+        return true;
+      }
     },
   },
 };
