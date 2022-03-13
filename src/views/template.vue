@@ -3,8 +3,9 @@
 </template>
 <script>
 import ABadge from "@/components/ABadge.vue";
+import config from "../../configuraciones.js";
 export default {
-  components: { ABadge },
+  components: { ABadge, config },
   data() {
     return {
       elSwitch: true,
