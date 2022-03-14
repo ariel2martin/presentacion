@@ -1,55 +1,98 @@
 <template>
   <div>
-    <input type="file" id="file" />
+    <v-container class="mt-4">
+      <v-row>
+        <v-col cols="12" xs="12" sm="12" md="6">
+          <v-file-input
+            chips
+            id="file"
+            outlined
+            label="Agregar jugadores desde un archivo"
+            accept="text/csv,text/plain"
+          ></v-file-input>
+          <v-spacer></v-spacer>
+        </v-col>
 
-    <v-tooltip bottom>
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          elevation="2"
-          :color="Complementario1"
-          large
-          @click="daNumero()"
-          v-bind="attrs"
-          v-on="on"
-        >
-          Numerar
-        </v-btn>
-      </template>
-      <span
-        >Asigna numero a los que les falta, a partir del numero mayor de
-        ellos</span
+        <v-col cols="12" xs="12" sm="12" md="6">
+          <div class="text-right">
+            <v-spacer></v-spacer>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  elevation="2"
+                  :color="Complementario1"
+                  large
+                  @click="daNumero()"
+                  v-bind="attrs"
+                  v-on="on"
+                  class="mr-4"
+                >
+                  Numerar
+                </v-btn>
+              </template>
+              <span
+                >Asigna numero a los que les falta, a partir del numero mayor de
+                ellos</span
+              >
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  elevation="2"
+                  :color="Complementario1"
+                  large
+                  @click="vaciar()"
+                  v-bind="attrs"
+                  v-on="on"
+                  class="mr-4"
+                >
+                  Vaciar
+                </v-btn>
+              </template>
+              <span>vacía el listado</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  elevation="2"
+                  :color="Complementario1"
+                  large
+                  @click="agrupar()"
+                  v-bind="attrs"
+                  v-on="on"
+                  class="mr-4"
+                >
+                  agrupar
+                </v-btn>
+              </template>
+              <span>a todos les asigna un grupo nuevo a azar, </span>
+            </v-tooltip>
+          </div>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container>
+      <v-data-table
+        :headers="tableheader"
+        :items="listado"
+        :items-per-page="10"
+        class="elevation-1"
       >
-    </v-tooltip>
-    <v-tooltip bottom>
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          elevation="2"
-          :color="Complementario1"
-          large
-          @click="vaciar()"
-          v-bind="attrs"
-          v-on="on"
-        >
-          Vaciar
-        </v-btn>
-      </template>
-      <span>vacía el listado</span>
-    </v-tooltip>
-    <v-tooltip bottom>
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn
-          elevation="2"
-          :color="Complementario1"
-          large
-          @click="agrupar()"
-          v-bind="attrs"
-          v-on="on"
-        >
-          agrupar
-        </v-btn>
-      </template>
-      <span>a todos les asigna un grupo nuevo a azar, </span>
-    </v-tooltip>
+        <template v-slot:top>
+          <v-toolbar flat>
+            <v-toolbar-title>Listado de jugadores</v-toolbar-title>
+            <v-spacer></v-spacer>
+          </v-toolbar>
+        </template>
+
+        <template v-slot:item.actions="{ item }">
+          <v-icon small class="mr-2" @click="editJugador(item)">
+            mdi-pencil
+          </v-icon>
+          <v-icon small @click="deleteJugador(item)"> mdi-delete </v-icon>
+        </template>
+      </v-data-table>
+    </v-container>
     <v-overlay :value="overlay">
       <v-card class="mx-auto" max-width="450" :color="Complementario2">
         <v-card-text>
@@ -91,28 +134,7 @@
         </v-card-actions>
       </v-card>
     </v-overlay>
-    <v-container>
-      <v-data-table
-        :headers="tableheader"
-        :items="listado"
-        :items-per-page="10"
-        class="elevation-1"
-      >
-        <template v-slot:top>
-          <v-toolbar flat>
-            <v-toolbar-title>Listado de jugadores</v-toolbar-title>
-            <v-spacer></v-spacer>
-          </v-toolbar>
-        </template>
 
-        <template v-slot:item.actions="{ item }">
-          <v-icon small class="mr-2" @click="editJugador(item)">
-            mdi-pencil
-          </v-icon>
-          <v-icon small @click="deleteJugador(item)"> mdi-delete </v-icon>
-        </template>
-      </v-data-table>
-    </v-container>
     <v-overlay :value="logoespera">
       <v-progress-circular
         :size="150"
