@@ -48,7 +48,7 @@
           agrupar
         </v-btn>
       </template>
-      <span>Asigna grupo al azar</span>
+      <span>a todos les asigna un grupo nuevo a azar, </span>
     </v-tooltip>
     <v-overlay :value="overlay">
       <v-card class="mx-auto" max-width="450" :color="Complementario2">
@@ -67,7 +67,10 @@
                 <tr
                   v-for="item in gruposPosibles"
                   :key="item.name"
-                  @click="eligeCantGrupos(item)"
+                  @click="
+                    cantGruposElegidos = item;
+                    eligeCantGrupos();
+                  "
                 >
                   <td class="text-center">{{ item.cuantos }}</td>
                   <td>{{ item.texto }}</td>
@@ -118,6 +121,43 @@
         indeterminate
       ></v-progress-circular>
     </v-overlay>
+    <v-overlay :value="overlayConfirmaAsignarGrupo">
+      <template>
+        <v-card class="mx-auto my-12" max-width="374">
+          <v-card-title>Ya había asignado grupos</v-card-title>
+          <v-card-text>
+            <div>
+              Si vuelve a asignar, los grupos actuales se reemplazarán por otros
+              al azar
+            </div>
+          </v-card-text>
+          <v-divider class="mx-4"></v-divider>
+          <v-card-actions>
+            <v-btn
+              color="deep-purple lighten-2"
+              text
+              @click="
+                confirmadoAsignarGrupo = true;
+
+                eligeCantGrupos();
+              "
+            >
+              Confirmar
+            </v-btn>
+            <v-btn
+              color="deep-purple lighten-2"
+              text
+              @click="
+                overlayConfirmaAsignarGrupo = false;
+                overlay = false;
+              "
+            >
+              Cancelar
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </template>
+    </v-overlay>
   </div>
 </template>
 <script>
@@ -128,6 +168,7 @@ export default {
   data() {
     return {
       gruposPosibles: [],
+      cantGruposElegidos: [],
       listado: [],
       result: [{ name: "agua" }],
       tableheader: [
@@ -145,6 +186,9 @@ export default {
       ],
       overlay: false,
       logoespera: false,
+      yaAsignoGrupo: undefined,
+      overlayConfirmaAsignarGrupo: false,
+      confirmadoAsignarGrupo: false,
 
       Complementario1: config.colors.complemento1,
       Complementario2: config.colors.complemento2,
@@ -170,9 +214,11 @@ export default {
       .addEventListener("input", this.readFile, false);
     //change
 
+    this.yaAsignoGrupo = localStorage.getItem("yaAsignoGrupo") === "true"; //localstorage guarda texto, no booleans. hay que pasar de "false" a false
     this.listadoAgrega(JSON.parse(localStorage.getItem("listado")));
-
     console.log("mounted");
+    console.log(this.yaAsignoGrupo);
+    console.log(localStorage.getItem("yaAsignoGrupo"));
   },
   beforeUpdate() {
     console.log("beforeUpdate");
@@ -192,6 +238,7 @@ export default {
         setTimeout(() => {
           this.logoespera = false;
           this.overlay = false;
+          this.overlayConfirmaAsignarGrupo = false;
         }, 3000);
     },
   },
@@ -233,11 +280,13 @@ export default {
         let lines = this.parseCSV(e.target.result);
         let output = this.creaJson(lines);
         //console.log(lines);
-
+        this.yaAsignoGrupo = false;
+        localStorage.setItem("yaAsignoGrupo", false);
         this.listadoAgrega(output);
       };
       // Leemos el contenido del archivo seleccionado
-      reader.readAsBinaryString(file);
+      //reader.readAsBinaryString(file);
+      reader.readAsText(file);
     },
     listadoAgrega(datos) {
       //this.listado.push(datos);
@@ -248,13 +297,16 @@ export default {
         }
       }
       localStorage.setItem("listado", JSON.stringify(this.listado));
+      //localStorage.setItem("yaAsignoGrupo", this.yaAsignoGrupo);
     },
     listadoActualiza() {
       localStorage.setItem("listado", JSON.stringify(this.listado));
+      localStorage.setItem("yaAsignoGrupo", this.yaAsignoGrupo);
     },
     vaciar() {
       this.listado = [];
-      localStorage.setItem("listado", JSON.stringify(this.listado));
+      this.yaAsignoGrupo = false;
+      this.listadoActualiza();
     },
     daNumero() {
       let mayor = 0;
@@ -321,46 +373,59 @@ export default {
           elementos2: elementos2,
         });
       }
-      this.overlay = !this.overlay;
+      this.overlay = true;
     },
-    eligeCantGrupos(cuantos) {
-      this.logoespera = true;
-
-      //a cada elemento le pone un numero al azar
-      //luego se ordena por ese numero
-      //y finalmente, con ese orden, se asignan los grupos
-      for (let i = 0; i < this.listado.length; i++) {
-        this.listado[i].random = Math.random();
-      }
-      this.listado.sort(function (a, b) {
-        if (a.random > b.random) {
-          return 1;
-        }
-        if (a.random < b.random) {
-          return -1;
-        }
-
-        return 0;
-      });
-
-      let g = 0;
-      let pos = 0;
-      for (let i = 0; i < cuantos.grupos1; i++) {
-        for (let j = 0; j < cuantos.elementos1; j++) {
-          this.listado[pos].grupo = "G" + (g + 1).toString();
-          pos++;
-        }
-        g++;
+    eligeCantGrupos() {
+      if (this.yaAsignoGrupo && !this.confirmadoAsignarGrupo) {
+        //que confirme porque  ya asigno grupos antes, no sea cosa que los pierda
+        this.overlayConfirmaAsignarGrupo = true;
       }
 
-      for (let i = 0; i < cuantos.grupos2; i++) {
-        for (let j = 0; j < cuantos.elementos2; j++) {
-          this.listado[pos].grupo = "G" + (g + 1).toString();
-          pos++;
+      if (
+        !this.yaAsignoGrupo ||
+        (this.yaAsignoGrupo && this.confirmadoAsignarGrupo)
+      ) {
+        this.overlayConfirmaAsignarGrupo = false;
+        this.logoespera = true;
+        //a cada elemento le pone un numero al azar
+        //luego se ordena por ese numero
+        //y finalmente, con ese orden, se asignan los grupos
+        for (let i = 0; i < this.listado.length; i++) {
+          this.listado[i].random = Math.random();
         }
-        g++;
+        this.listado.sort(function (a, b) {
+          if (a.random > b.random) {
+            return 1;
+          }
+          if (a.random < b.random) {
+            return -1;
+          }
+
+          return 0;
+        });
+
+        let g = 0;
+        let pos = 0;
+        for (let i = 0; i < this.cantGruposElegidos.grupos1; i++) {
+          for (let j = 0; j < this.cantGruposElegidos.elementos1; j++) {
+            this.listado[pos].grupo = "G" + (g + 1).toString();
+            pos++;
+          }
+          g++;
+        }
+
+        for (let i = 0; i < this.cantGruposElegidos.grupos2; i++) {
+          for (let j = 0; j < this.cantGruposElegidos.elementos2; j++) {
+            this.listado[pos].grupo = "G" + (g + 1).toString();
+            pos++;
+          }
+          g++;
+        }
+
+        this.yaAsignoGrupo = true;
+        this.confirmadoAsignarGrupo = false;
+        this.listadoActualiza();
       }
-      listadoActualiza();
     },
     editJugador(item) {
       console.log(item);
