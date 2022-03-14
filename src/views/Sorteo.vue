@@ -6,9 +6,11 @@
           <v-file-input
             chips
             id="file"
+            multiple
             outlined
             label="Agregar jugadores desde un archivo"
             accept="text/csv,text/plain"
+            style="max-width: 80%"
           ></v-file-input>
           <v-spacer></v-spacer>
         </v-col>
@@ -145,7 +147,7 @@
     </v-overlay>
     <v-overlay :value="overlayConfirmaAsignarGrupo">
       <template>
-        <v-card class="mx-auto my-12" max-width="374">
+        <v-card class="mx-auto my-12" max-width="374" :color="Complementario5">
           <v-card-title>Ya había asignado grupos</v-card-title>
           <v-card-text>
             <div>
@@ -156,7 +158,7 @@
           <v-divider class="mx-4"></v-divider>
           <v-card-actions>
             <v-btn
-              color="deep-purple lighten-2"
+              :color="Complementario1"
               text
               @click="
                 confirmadoAsignarGrupo = true;
@@ -167,7 +169,7 @@
               Confirmar
             </v-btn>
             <v-btn
-              color="deep-purple lighten-2"
+              :color="Complementario1"
               text
               @click="
                 overlayConfirmaAsignarGrupo = false;
@@ -191,6 +193,7 @@ export default {
     return {
       gruposPosibles: [],
       cantGruposElegidos: [],
+      posicionDuplicada: [],
       listado: [],
       result: [{ name: "agua" }],
       tableheader: [
@@ -305,6 +308,7 @@ export default {
         this.yaAsignoGrupo = false;
         localStorage.setItem("yaAsignoGrupo", false);
         this.listadoAgrega(output);
+        document.getElementById("file").value = "";
       };
       // Leemos el contenido del archivo seleccionado
       //reader.readAsBinaryString(file);
@@ -315,12 +319,22 @@ export default {
 
       for (var i in datos) {
         if (datos[i].nombre > " ") {
-          if (!this.duplicado(datos[i].nombre)) this.listado.push(datos[i]);
+          if (!this.duplicado(datos[i].nombre)) {
+            this.pushSinDuplicadopos(datos[i]);
+            if (this.posicionDuplicada.length > 1) {
+              alert(
+                "estos números estaban duplicados, entonces se importó el nombre del jugador pero no su número: " +
+                  this.posicionDuplicada.toString()
+              );
+              this.posicionDuplicada = [];
+            }
+          }
         }
       }
       localStorage.setItem("listado", JSON.stringify(this.listado));
       //localStorage.setItem("yaAsignoGrupo", this.yaAsignoGrupo);
     },
+
     listadoActualiza() {
       localStorage.setItem("listado", JSON.stringify(this.listado));
       localStorage.setItem("yaAsignoGrupo", this.yaAsignoGrupo);
@@ -329,15 +343,21 @@ export default {
       this.listado = [];
       this.yaAsignoGrupo = false;
       this.listadoActualiza();
+      //console.warn(document.getElementById("file").value.toString());
+      document.getElementById("file").value = "";
     },
     daNumero() {
       let mayor = 0;
       for (let i = 0; i < this.listado.length; i++) {
-        if (this.listado[i].posicion > mayor) mayor = this.listado[i].posicion;
+        if (parseInt(this.listado[i].posicion) > mayor)
+          mayor = parseInt(this.listado[i].posicion);
       }
 
       for (let i = 0; i < this.listado.length; i++) {
-        if (this.listado[i].posicion == undefined) {
+        if (
+          this.listado[i].posicion == undefined ||
+          this.listado[i].posicion < 1
+        ) {
           this.listado[i].posicion = ++mayor;
         }
       }
@@ -349,6 +369,16 @@ export default {
       } else {
         return true;
       }
+    },
+    pushSinDuplicadopos(dato) {
+      if (this.listado.find((e) => e.posicion == dato.posicion) == undefined) {
+      } else {
+        if (dato.posicion > " ") {
+          this.posicionDuplicada.push(dato.posicion);
+          dato.posicion = "";
+        }
+      }
+      this.listado.push(dato);
     },
     agrupar() {
       this.gruposPosibles = [];
