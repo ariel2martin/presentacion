@@ -87,11 +87,20 @@
           </v-toolbar>
         </template>
 
-        <template v-slot:item.actions="{ item }">
+        <template v-slot:item.comandos="{ item }">
           <v-icon small class="mr-2" @click="editJugador(item)">
             mdi-pencil
           </v-icon>
           <v-icon small @click="deleteJugador(item)"> mdi-delete </v-icon>
+        </template>
+        <template v-slot:footer.page-text>
+          <v-btn
+            :color="Complementario4"
+            class="ma-2"
+            @click="overlayAgregaJugador = true"
+          >
+            <v-icon small> mdi-plus </v-icon>Agregar
+          </v-btn>
         </template>
       </v-data-table>
     </v-container>
@@ -182,6 +191,82 @@
         </v-card>
       </template>
     </v-overlay>
+
+    <v-overlay :value="overlayAgregaJugador">
+      <v-card class="mx-auto" elevation="24" :color="Complementario3">
+        <v-card-text>
+          <v-form ref="form">
+            <v-text-field
+              v-model="editaJugador[0].nombre"
+              :rules="[(v) => !!v || 'Faltó el nombre']"
+              required
+              label="Nombre"
+            ></v-text-field>
+
+            <v-text-field
+              v-model="editaJugador[0].posicion"
+              label="Numero"
+            ></v-text-field>
+            <v-text-field
+              v-model="editaJugador[0].grupo"
+              label="Grupo"
+            ></v-text-field>
+
+            <v-btn
+              :color="Complementario4"
+              class="mr-4"
+              @click="listadoAgrega(editaJugador)"
+            >
+              Agregar </v-btn
+            ><v-btn
+              :color="Complementario5"
+              class="mr-4"
+              @click="overlayAgregaJugador = false"
+            >
+              Cancelar
+            </v-btn>
+          </v-form>
+        </v-card-text>
+      </v-card>
+    </v-overlay>
+
+    <v-overlay :value="overlayEditaJugador">
+      <v-card class="mx-auto" elevation="24" :color="Complementario3">
+        <v-card-text>
+          <v-form ref="form">
+            <v-text-field
+              v-model="editaJugador[0].nombre"
+              :rules="[(v) => !!v || 'Faltó el nombre']"
+              required
+              label="Nombre"
+            ></v-text-field>
+
+            <v-text-field
+              v-model="editaJugador[0].posicion"
+              label="Numero"
+            ></v-text-field>
+            <v-text-field
+              v-model="editaJugador[0].grupo"
+              label="Grupo"
+            ></v-text-field>
+
+            <v-btn
+              :color="Complementario4"
+              class="mr-4"
+              @click="reemplazaJugador()"
+            >
+              Cambiar </v-btn
+            ><v-btn
+              :color="Complementario5"
+              class="mr-4"
+              @click="overlayEditaJugador = false"
+            >
+              Cancelar
+            </v-btn>
+          </v-form>
+        </v-card-text>
+      </v-card>
+    </v-overlay>
   </div>
 </template>
 <script>
@@ -195,7 +280,8 @@ export default {
       cantGruposElegidos: [],
       posicionDuplicada: [],
       listado: [],
-      result: [{ name: "agua" }],
+      editaJugador: [{ nombre: "", posicion: "", grupo: "" }],
+      editaJugadoraux: [],
       tableheader: [
         {
           text: "Nombre",
@@ -207,13 +293,16 @@ export default {
         { text: "num", value: "posicion" },
         { text: "grupo", value: "grupo" },
 
-        { text: "", value: "actions" },
+        { text: "", value: "comandos" },
       ],
       overlay: false,
       logoespera: false,
       yaAsignoGrupo: undefined,
       overlayConfirmaAsignarGrupo: false,
       confirmadoAsignarGrupo: false,
+      overlayAgregaJugador: false,
+      overlayEditaJugador: false,
+      cualJugadorEdita: -1,
 
       Complementario1: config.colors.complemento1,
       Complementario2: config.colors.complemento2,
@@ -321,7 +410,8 @@ export default {
         if (datos[i].nombre > " ") {
           if (!this.duplicado(datos[i].nombre)) {
             this.pushSinDuplicadopos(datos[i]);
-            if (this.posicionDuplicada.length > 1) {
+
+            if (this.posicionDuplicada.length > 0) {
               alert(
                 "estos números estaban duplicados, entonces se importó el nombre del jugador pero no su número: " +
                   this.posicionDuplicada.toString()
@@ -333,6 +423,8 @@ export default {
       }
       localStorage.setItem("listado", JSON.stringify(this.listado));
       //localStorage.setItem("yaAsignoGrupo", this.yaAsignoGrupo);
+      this.editaJugador = [{ nombre: "", posicion: "", grupo: "" }];
+      this.overlayAgregaJugador = false;
     },
 
     listadoActualiza() {
@@ -480,7 +572,12 @@ export default {
       }
     },
     editJugador(item) {
-      console.log(item);
+      this.editaJugadoraux = item;
+      this.overlayEditaJugador = true;
+
+      this.editaJugador[0].nombre = item.nombre;
+      this.editaJugador[0].posicion = item.posicion;
+      this.editaJugador[0].grupo = item.grupo;
     },
     deleteJugador(item) {
       let donde = this.listado.findIndex((i) => i === item);
@@ -489,6 +586,11 @@ export default {
         this.listado.splice(donde, 1);
         this.listadoActualiza();
       } else alert("No puedo manejar este nombre: " + item.nombre);
+    },
+    reemplazaJugador() {
+      this.deleteJugador(this.editaJugadoraux);
+      this.listadoAgrega(this.editaJugador);
+      this.overlayEditaJugador = false;
     },
   },
 };
