@@ -302,16 +302,18 @@
                     <v-select
                       :items="puntaje"
                       item-text="grupo"
-                      :rules="[(v) => !!v || 'vacio']"
+                      :rules="[(v) => !!v || 'Falta']"
                       label="Grupo"
                       required
-                      v-model="selected1"
+                      v-model="auxPuntoGrupo"
+                      return-object
                     ></v-select>
 
                     <v-text-field
-                      :rules="[(v) => !!v || 'vacio']"
+                      :rules="[numberRule]"
                       label="Puntaje"
-                      v-model="selected2"
+                      v-model="auxPuntoValor"
+                      type="number"
                     ></v-text-field>
 
                     <v-btn
@@ -326,12 +328,18 @@
               </v-card>
             </v-col>
             <v-col cols="12" md="10">
-              <v-container fluid>
-                <div v-for="item in puntaje" :key="item.grupo">
-                  <v-card class="mx-auto mb-5">
+              <v-row no-gutters>
+                <v-col
+                  v-for="item in puntaje"
+                  :key="item.grupo"
+                  cols="12"
+                  sm="6"
+                  md="4"
+                >
+                  <v-card class="mx-auto mb-5" width="300">
                     <v-card-text>
                       <p class="text-h4 text--primary">
-                        {{ item.grupo }}
+                        {{ item.grupo }} ({{ item.total }})
                       </p>
                     </v-card-text>
 
@@ -341,17 +349,15 @@
                       line-width="2"
                       padding="2"
                       smooth="6"
-                      :value="item.value"
+                      :value="item.puntos"
                       auto-draw
                     ></v-sparkline>
                     <v-card-text>
-                      <p>
-                        {{ item.puntos.toString() }}
-                      </p>
+                      <p>Puntos: {{ item.value.toString() }}</p>
                     </v-card-text>
                   </v-card>
-                </div>
-              </v-container>
+                </v-col>
+              </v-row>
             </v-col>
           </v-row>
         </v-container>
@@ -409,20 +415,13 @@ export default {
       Complementario4: config.colors.complemento4,
       Complementario5: config.colors.complemento5,
 
-      puntaje: [
-        {
-          grupo: "G1",
-          value: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
-          puntos: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
-        },
-        {
-          grupo: "G2",
-          value: [0, 2, 5, 9, 15, 10, 3, 5, 10, 0, 1, 8, 2, 9, 0],
-          puntos: [0, 2, 5, 9, 5, 10, 3, 5, 0, 0, 1, 8, 2, 9, 0],
-        },
-      ],
-      selected1: 0,
-      selected2: 0,
+      puntaje: [],
+      auxPuntoGrupo: 0,
+      auxPuntoValor: 0,
+      numberRule: (v) => {
+        if (!isNaN(parseFloat(v)) && v >= -99 && v <= 99) return true;
+        return "numero entre -99 y 99";
+      },
     };
   },
   //{ text: "grupo", value: "grupo" },
@@ -441,12 +440,17 @@ export default {
 
       .addEventListener("input", this.readFile, false);
     //change
-
+    let pun = JSON.parse(localStorage.getItem("puntaje"));
+    //console.warn(pun);
+    if (pun != null) {
+      this.puntaje = pun;
+    }
+    // es importante que primero tome el puntaje, que tiene grupos, y luego agregue el listado de jugadores
+    // si listado de jugadores tien egrupos los agrega con puntaje cero
     this.yaAsignoGrupo = localStorage.getItem("yaAsignoGrupo") === "true"; //localstorage guarda texto, no booleans. hay que pasar de "false" a false
     this.listadoAgrega(JSON.parse(localStorage.getItem("listado")));
+
     console.log("mounted");
-    console.log(this.yaAsignoGrupo);
-    console.log(localStorage.getItem("yaAsignoGrupo"));
   },
   beforeUpdate() {
     console.log("beforeUpdate");
@@ -524,7 +528,7 @@ export default {
         if (datos[i].nombre > " ") {
           if (!this.duplicado(datos[i].nombre)) {
             this.pushSinDuplicadopos(datos[i]);
-
+            this.preparaVariablePuntaje(datos[i].grupo);
             if (this.posicionDuplicada.length > 0) {
               this.snackbartext =
                 "estos números estaban duplicados, entonces se importó el nombre del jugador pero no su número: " +
@@ -551,6 +555,8 @@ export default {
       this.listadoActualiza();
       //console.warn(document.getElementById("file").value.toString());
       document.getElementById("file").value = "";
+      this.puntaje = [];
+      localStorage.setItem("puntaje", JSON.stringify(this.puntaje));
     },
     daNumero() {
       let mayor = 0;
@@ -664,9 +670,12 @@ export default {
 
         let g = 0;
         let pos = 0;
+        this.puntaje = [];
+        // hay dos tipos de grupo, por eso dos for
         for (let i = 0; i < this.cantGruposElegidos.grupos1; i++) {
           for (let j = 0; j < this.cantGruposElegidos.elementos1; j++) {
             this.listado[pos].grupo = "G" + (g + 1).toString();
+            this.preparaVariablePuntaje("G" + (g + 1).toString());
             pos++;
           }
           g++;
@@ -675,6 +684,7 @@ export default {
         for (let i = 0; i < this.cantGruposElegidos.grupos2; i++) {
           for (let j = 0; j < this.cantGruposElegidos.elementos2; j++) {
             this.listado[pos].grupo = "G" + (g + 1).toString();
+            this.preparaVariablePuntaje("G" + (g + 1).toString());
             pos++;
           }
           g++;
@@ -683,6 +693,22 @@ export default {
         this.yaAsignoGrupo = true;
         this.confirmadoAsignarGrupo = false;
         this.listadoActualiza();
+      }
+    },
+    preparaVariablePuntaje(q) {
+      // me fijo si no está dado de alta el grupo, lo agrego
+      if (
+        q != undefined &&
+        q.toString > "" &&
+        this.puntaje.findIndex((i) => i.grupo === q) == -1
+      ) {
+        let cuerpo = {
+          grupo: q,
+          value: [0],
+          puntos: [0],
+          total: 0,
+        };
+        this.puntaje.push(cuerpo);
       }
     },
     editJugador(item) {
@@ -707,9 +733,27 @@ export default {
       this.overlayEditaJugador = false;
     },
     sumapuntos(e) {
-      console.log(this.selected1);
-      console.log(this.selected2);
-      console.warn(this.puntaje.findIndex((i) => i.grupo === this.selected1));
+      if (!this.auxPuntoGrupo.grupo) return;
+      let posicion = this.puntaje.findIndex(
+        (i) => i.grupo === this.auxPuntoGrupo.grupo
+      );
+
+      this.puntaje[posicion].value.push(parseInt(this.auxPuntoValor));
+      /* esto funciona muy bien, lee el ultimo valor de los puntos,  sin usar slice que crearia un array nuevo,  pero mejor creo un campo Puntaje donde acumulo el total y listo
+      let ultimo =
+        this.puntaje[posicion].puntos[this.puntaje[posicion].puntos.length - 1];
+      console.warn(ultimo);
+      if (ultimo == undefined) {
+        console.log("si");
+        ultimo = 0;
+      }
+      ultimo = ultimo + parseInt(this.auxPuntoValor);
+      this.puntaje[posicion].puntos.push(ultimo);
+*/
+      let total = this.puntaje[posicion].total + parseInt(this.auxPuntoValor);
+      this.puntaje[posicion].total = total;
+      this.puntaje[posicion].puntos.push(total);
+      localStorage.setItem("puntaje", JSON.stringify(this.puntaje));
     },
   },
 };
