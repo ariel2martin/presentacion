@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="assets/images/webcam.png" sizes="96x96" />
+    <script lang="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="/assets/js/simplepeer.min.js"></script>
+</head>
+
+<body>
+    <a href="javascript:void(0)" id='flip-button'>cambiacamara</a>
+    <script>
+        const video = document.createElement('video');
+
+        let socket;
+        let localStream = null;
+        let peers = {};
+        const configuration = {
+            "iceServers": [
+                { urls: 'stun:stun.l.google.com:19302' }
+            ]
+        };
+        /*
+                { urls: 'stun:stun.counterpath.com' },
+                { urls: 'stun:stun.xten.com' },
+                {
+                    urls: 'turn:numb.viagenie.ca',
+                    credential: 'muazkh',
+                    username: 'webrtc@live.com'
+                },
+                { urls: 'stun:stunserver.org' },
+                { urls: 'stun:stun1.l.google.com:19302' },
+                { urls: 'stun:stun.voiparound.com' },
+                { urls: 'stun:stun.voipstunt.com' },
+                { urls: 'stun:stun.voipbuster.com' },
+                { urls: 'stun:stun.1und1.de' },
+                { urls: 'stun:stun2.l.google.com:19302' }
+        */
+
+
+        var constraints = {
+            audio: false,
+            video: {
+                width: { min: 320, ideal: 640, max: 1080 },
+                height: { min: 240, ideal: 480, max: 720 },
+                frameRate: { ideal: 10, max: 15 },
+                facingMode: { ideal: "environment" }
+            }
+        };
+
+        var front = false;
+        document.getElementById('flip-button').onclick = function () {
+            front = !front;
+
+            constraints.video.facingMode = (front ? "user" : "environment");
+            alert(front);
+            alert(constraints.video.facingMode);
+        };
+
+        navigator.mediaDevices.getUserMedia(constraints).then(stream => {
+            console.log('camara encendida: stream');
+            video.srcObject = stream;
+            localStream = stream;
+
+            init();
+
+        }).catch(e => alert(`getusermedia error ${e.name}`));
+
+
+        function init() {
+            socket = io();
+
+            socket.on('welcome', function (data) {
+                console.log(data.message);
+                socket.emit('i am client', { app: 'webcam', id: data.id });
+            });
+
+
+
+
+            socket.on('initReceive', socket_id => {
+                console.log('INIT RECEIVE ' + socket_id);
+                addPeer(socket_id, false);
+
+                socket.emit('initSend', socket_id);
+            });
+
+            socket.on('initSend', socket_id => {
+                console.log('INIT SEND ' + socket_id);
+                addPeer(socket_id, true);
+            });
+
+            socket.on('removePeer', socket_id => {
+                console.log('removing peer ' + socket_id);
+                removePeer(socket_id);
+            });
+
+            socket.on('disconnect', () => {
+                console.log('GOT DISCONNECTED');
+                for (let socket_id in peers) {
+                    removePeer(socket_id);
+                }
+            });
+
+            socket.on('signal', data => {
+                peers[data.socket_id].signal(data.signal);
+                console.log('signal');
+            });
+        }
+
+
+
+
+
+
+        function removePeer(socket_id) {
+
+            let videoEl = document.getElementById(socket_id);
+            if (videoEl) {
+
+                const tracks = videoEl.srcObject.getTracks();
+
+                tracks.forEach(function (track) {
+                    track.stop();
+                });
+
+                videoEl.srcObject = null;
+                videoEl.parentNode.removeChild(videoEl);
+            }
+            if (peers[socket_id]) peers[socket_id].destroy();
+            delete peers[socket_id];
+        }
+
+
+        function addPeer(socket_id, am_initiator) {
+            peers[socket_id] = new SimplePeer({
+                initiator: am_initiator,
+                stream: localStream,
+                config: configuration
+            });
+
+            peers[socket_id].on('signal', data => {
+                socket.emit('signal', {
+                    signal: data,
+                    socket_id: socket_id
+                });
+            });
+
+
+        }
+
+
+
+
+        function switchMedia() {
+            if (constraints.video.facingMode.ideal === 'user') {
+                constraints.video.facingMode.ideal = 'environment';
+            } else {
+                constraints.video.facingMode.ideal = 'user';
+            }
+
+            const tracks = localStream.getTracks();
+
+            tracks.forEach(function (track) {
+                track.stop();
+            });
+
+            localVideo.srcObject = null;
+            navigator.mediaDevices.getUserMedia(constraints).then(stream => {
+
+                for (let socket_id in peers) {
+                    for (let index in peers[socket_id].streams[0].getTracks()) {
+                        for (let index2 in stream.getTracks()) {
+                            if (peers[socket_id].streams[0].getTracks()[index].kind === stream.getTracks()[index2].kind) {
+                                peers[socket_id].replaceTrack(peers[socket_id].streams[0].getTracks()[index], stream.getTracks()[index2], peers[socket_id].streams[0]);
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                localStream = stream;
+                localVideo.srcObject = stream;
+
+                updateButtons();
+            });
+        }
+
+
+        function setScreen() {
+            navigator.mediaDevices.getDisplayMedia().then(stream => {
+                for (let socket_id in peers) {
+                    for (let index in peers[socket_id].streams[0].getTracks()) {
+                        for (let index2 in stream.getTracks()) {
+                            if (peers[socket_id].streams[0].getTracks()[index].kind === stream.getTracks()[index2].kind) {
+                                peers[socket_id].replaceTrack(peers[socket_id].streams[0].getTracks()[index], stream.getTracks()[index2], peers[socket_id].streams[0]);
+                                break;
+                            }
+                        }
+                    }
+
+                }
+                localStream = stream;
+
+                localVideo.srcObject = localStream;
+                socket.emit('removeUpdatePeer', '');
+            });
+            updateButtons();
+        }
+
+
+        function removeLocalStream() {
+            if (localStream) {
+                const tracks = localStream.getTracks();
+
+                tracks.forEach(function (track) {
+                    track.stop();
+                });
+
+                localVideo.srcObject = null;
+            }
+
+            for (let socket_id in peers) {
+                removePeer(socket_id);
+            }
+        }
+
+        /**
+         * Enable/disable microphone
+         */
+        function toggleMute() {
+            for (let index in localStream.getAudioTracks()) {
+                localStream.getAudioTracks()[index].enabled = !localStream.getAudioTracks()[index].enabled;
+                muteButton.innerText = localStream.getAudioTracks()[index].enabled ? "Unmuted" : "Muted";
+            }
+        }
+        /**
+         * Enable/disable video
+         */
+        function toggleVid() {
+            for (let index in localStream.getVideoTracks()) {
+                localStream.getVideoTracks()[index].enabled = !localStream.getVideoTracks()[index].enabled;
+                vidButton.innerText = localStream.getVideoTracks()[index].enabled ? "Video Enabled" : "Video Disabled";
+            }
+        }
+
+        /**
+         * updating text of buttons
+         */
+        function updateButtons() {
+            for (let index in localStream.getVideoTracks()) {
+                vidButton.innerText = localStream.getVideoTracks()[index].enabled ? "Video Enabled" : "Video Disabled";
+            }
+            for (let index in localStream.getAudioTracks()) {
+                muteButton.innerText = localStream.getAudioTracks()[index].enabled ? "Unmuted" : "Muted";
+            }
+        }
+    </script>
+</body>
+
+</html>

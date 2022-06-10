@@ -1,0 +1,6122 @@
+[
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "155562"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Aguarras",
+        "m3": "3233"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Bases Lubricantes",
+        "m3": "9314"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Butano y Otros C3",
+        "m3": "12493724"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "53531500"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Fueloil",
+        "m3": "47762644"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Fueloil Marinos",
+        "m3": "19315165"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "105705011"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "591640"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Grasas",
+        "m3": "811"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Kerosene",
+        "m3": "299027"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "49606296"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "12049156"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Propano y Otros C3",
+        "m3": "1943102"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2758821"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6336902"
+    },
+    {
+        "año": "2016",
+        "mes": "1",
+        "concepto": "Solventes Hexano",
+        "m3": "1541197"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "149514"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Aguarras",
+        "m3": "3351"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Bases Lubricantes",
+        "m3": "23499"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Butano y Otros C3",
+        "m3": "11709173"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "53681684"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Fueloil",
+        "m3": "45029212"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Fueloil Marinos",
+        "m3": "16519281"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "98547274"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "62903"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Grasas",
+        "m3": "718"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Kerosene",
+        "m3": "288915"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "47933109"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "11461320"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Propano y Otros C3",
+        "m3": "2072211"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2883133"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Solventes Aromáticos",
+        "m3": "4399367"
+    },
+    {
+        "año": "2016",
+        "mes": "2",
+        "concepto": "Solventes Hexano",
+        "m3": "1284575"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "125447"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Aguarras",
+        "m3": "5129"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Bases Lubricantes",
+        "m3": "636"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Butano y Otros C3",
+        "m3": "9280012"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "38723838"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Fueloil",
+        "m3": "34180216"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Fueloil Marinos",
+        "m3": "20271280"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "125924634"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "74913"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Grasas",
+        "m3": "91497"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Kerosene",
+        "m3": "469003"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "42831948"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10429977"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Propano y Otros C3",
+        "m3": "3128463"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Solventes Alifáticos",
+        "m3": "774089"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6052"
+    },
+    {
+        "año": "2016",
+        "mes": "3",
+        "concepto": "Solventes Hexano",
+        "m3": "5276"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "121191"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Aguarras",
+        "m3": "3499"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Bases Lubricantes",
+        "m3": "16932"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Butano y Otros C3",
+        "m3": "13802975"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "39798878"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Fueloil",
+        "m3": "45606588"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Fueloil Marinos",
+        "m3": "6561713"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "111990340"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "50513"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Grasas",
+        "m3": "864"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Kerosene",
+        "m3": "376907"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "44442115"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "9092139"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Propano y Otros C3",
+        "m3": "2780799"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Solventes Alifáticos",
+        "m3": "3308646"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Solventes Aromáticos",
+        "m3": "9361338"
+    },
+    {
+        "año": "2016",
+        "mes": "4",
+        "concepto": "Solventes Hexano",
+        "m3": "1647140"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "112085"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Aguarras",
+        "m3": "2120"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Bases Lubricantes",
+        "m3": "653"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Butano y Otros C3",
+        "m3": "13148984"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "14407920"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Fueloil",
+        "m3": "38791640"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Fueloil Marinos",
+        "m3": "16703438"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "105806951"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "63154"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Grasas",
+        "m3": "977"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Kerosene",
+        "m3": "465491"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "41888124"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "7952116"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Propano y Otros C3",
+        "m3": "2819951"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Solventes Alifáticos",
+        "m3": "3152187"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Solventes Aromáticos",
+        "m3": "8500677"
+    },
+    {
+        "año": "2016",
+        "mes": "5",
+        "concepto": "Solventes Hexano",
+        "m3": "1323662"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "98276"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Aguarras",
+        "m3": "4300"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Bases Lubricantes",
+        "m3": "9792"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Butano y Otros C3",
+        "m3": "11793745"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "8314347"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Fueloil",
+        "m3": "45123966"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Fueloil Marinos",
+        "m3": "12539917"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "135264752"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "55079"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Grasas",
+        "m3": "86411"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Kerosene",
+        "m3": "438929"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "39351829"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "9736838"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Propano y Otros C3",
+        "m3": "1924855"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2107992"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5716077"
+    },
+    {
+        "año": "2016",
+        "mes": "6",
+        "concepto": "Solventes Hexano",
+        "m3": "1331626"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "100092"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Aguarras",
+        "m3": "10839"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Bases Lubricantes",
+        "m3": "10809"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Butano y Otros C3",
+        "m3": "13247805"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "48524825"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Fueloil",
+        "m3": "48623870"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Fueloil Marinos",
+        "m3": "13247136"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "135764869"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "1484876"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Grasas",
+        "m3": "56920"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Kerosene",
+        "m3": "268903"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "40953784"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "5969266"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Propano y Otros C3",
+        "m3": "2753784"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2426522"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5824732"
+    },
+    {
+        "año": "2016",
+        "mes": "7",
+        "concepto": "Solventes Hexano",
+        "m3": "1721124"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "132442"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Aguarras",
+        "m3": "8720"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Bases Lubricantes",
+        "m3": "1099"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Butano y Otros C3",
+        "m3": "13625981"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "41069407"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Fueloil",
+        "m3": "46570037"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Fueloil Marinos",
+        "m3": "11127123"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "119560953"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "6491704"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Grasas",
+        "m3": "52460"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Kerosene",
+        "m3": "408822"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "40061735"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "9741189"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Propano y Otros C3",
+        "m3": "2032896"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2330917"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Solventes Aromáticos",
+        "m3": "7058878"
+    },
+    {
+        "año": "2016",
+        "mes": "8",
+        "concepto": "Solventes Hexano",
+        "m3": "1917806"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "160646"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Aguarras",
+        "m3": "9332"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Bases Lubricantes",
+        "m3": "10773"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Butano y Otros C3",
+        "m3": "11217478"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "49614261"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Fueloil",
+        "m3": "28940142"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Fueloil Marinos",
+        "m3": "12764282"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "103427127"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "5871230"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Grasas",
+        "m3": "127917"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Kerosene",
+        "m3": "175540"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "47098127"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "9868952"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Propano y Otros C3",
+        "m3": "2178734"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Solventes Alifáticos",
+        "m3": "3764965"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Solventes Aromáticos",
+        "m3": "7041393"
+    },
+    {
+        "año": "2016",
+        "mes": "9",
+        "concepto": "Solventes Hexano",
+        "m3": "1573548"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "153323"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Aguarras",
+        "m3": "9932"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Bases Lubricantes",
+        "m3": "11692"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Butano y Otros C3",
+        "m3": "12670449"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "55963773"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Fueloil",
+        "m3": "29708321"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Fueloil Marinos",
+        "m3": "15364810"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "119092731"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "6267680"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Grasas",
+        "m3": "119405"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Kerosene",
+        "m3": "245478"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "42236794"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10051502"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Propano y Otros C3",
+        "m3": "1994702"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Solventes Alifáticos",
+        "m3": "3595238"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6249392"
+    },
+    {
+        "año": "2016",
+        "mes": "10",
+        "concepto": "Solventes Hexano",
+        "m3": "1227509"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "156082"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Aguarras",
+        "m3": "2328"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Bases Lubricantes",
+        "m3": "6327"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Butano y Otros C3",
+        "m3": "13334152"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "10646936"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Fueloil",
+        "m3": "6549966"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Fueloil Marinos",
+        "m3": "12783780"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "82398238"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "3552280"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Grasas",
+        "m3": "88785"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Kerosene",
+        "m3": "845"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "41829159"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10047416"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Propano y Otros C3",
+        "m3": "2080786"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1739861"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5460607"
+    },
+    {
+        "año": "2016",
+        "mes": "11",
+        "concepto": "Solventes Hexano",
+        "m3": "1259350"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "157727"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Aguarras",
+        "m3": "30759"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Bases Lubricantes",
+        "m3": "11575"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Butano y Otros C3",
+        "m3": "13016782"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "48631242"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Fueloil",
+        "m3": "9869924"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Fueloil Marinos",
+        "m3": "11461314"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "103604228"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "6477132"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Grasas",
+        "m3": "82090"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Kerosene",
+        "m3": "1050"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "51805112"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "12429311"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Propano y Otros C3",
+        "m3": "1628925"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2306849"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Solventes Aromáticos",
+        "m3": "7002713"
+    },
+    {
+        "año": "2016",
+        "mes": "12",
+        "concepto": "Solventes Hexano",
+        "m3": "1275190"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "157956"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Aguarras",
+        "m3": "13792"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Bases Lubricantes",
+        "m3": "9228"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Butano y Otros C3",
+        "m3": "10159184"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "46247697"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Fueloil",
+        "m3": "26760803"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Fueloil Marinos",
+        "m3": "15080315"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "90601239"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "6244185"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Grasas",
+        "m3": "102877"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Kerosene",
+        "m3": "872"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "49884104"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "11876173"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Propano y Otros C3",
+        "m3": "1031125"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1926071"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5561138"
+    },
+    {
+        "año": "2017",
+        "mes": "1",
+        "concepto": "Solventes Hexano",
+        "m3": "1325824"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "144082"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Aguarras",
+        "m3": "39728"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Bases Lubricantes",
+        "m3": "8732"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Butano y Otros C3",
+        "m3": "11779001"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "47995841"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Fueloil",
+        "m3": "20492921"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Fueloil Marinos",
+        "m3": "9774087"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "90651793"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "3888770"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Grasas",
+        "m3": "72327"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Kerosene",
+        "m3": "704"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "38115287"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10359848"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Propano y Otros C3",
+        "m3": "1695215"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Solventes Alifáticos",
+        "m3": "564299"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5097906"
+    },
+    {
+        "año": "2017",
+        "mes": "2",
+        "concepto": "Solventes Hexano",
+        "m3": "1150108"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "163028"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Aguarras",
+        "m3": "59976"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Bases Lubricantes",
+        "m3": "17090"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Butano y Otros C3",
+        "m3": "12566827"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "44980439"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Fueloil",
+        "m3": "6392371"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Fueloil Marinos",
+        "m3": "12729150"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "101501353"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "6459641"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Grasas",
+        "m3": "92713"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Kerosene",
+        "m3": "1190"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "48941762"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "11667953"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Propano y Otros C3",
+        "m3": "1909483"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1064559"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Solventes Aromáticos",
+        "m3": "7855938"
+    },
+    {
+        "año": "2017",
+        "mes": "3",
+        "concepto": "Solventes Hexano",
+        "m3": "1652470"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "143823"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Aguarras",
+        "m3": "15116"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Bases Lubricantes",
+        "m3": "9118"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Butano y Otros C3",
+        "m3": "12406359"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "44316414"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Fueloil",
+        "m3": "19430617"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Fueloil Marinos",
+        "m3": "9683407"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "98625098"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "81839"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Grasas",
+        "m3": "90157"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Kerosene",
+        "m3": "129712"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "42557961"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10434985"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Propano y Otros C3",
+        "m3": "1929450"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2766673"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6545633"
+    },
+    {
+        "año": "2017",
+        "mes": "4",
+        "concepto": "Solventes Hexano",
+        "m3": "1669533"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "124848"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Aguarras",
+        "m3": "63648"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Bases Lubricantes",
+        "m3": "9851"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Butano y Otros C3",
+        "m3": "13356251"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "45440602"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Fueloil",
+        "m3": "20046403"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Fueloil Marinos",
+        "m3": "12977426"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "111440500"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "6404224"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Grasas",
+        "m3": "78252"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Kerosene",
+        "m3": "219495"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "47446126"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10156102"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Propano y Otros C3",
+        "m3": "1996380"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2571733"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5237453"
+    },
+    {
+        "año": "2017",
+        "mes": "5",
+        "concepto": "Solventes Hexano",
+        "m3": "1610338"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "144705"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Aguarras",
+        "m3": "33134"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Bases Lubricantes",
+        "m3": "430946"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Butano y Otros C3",
+        "m3": "14995782"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "48290180"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Fueloil",
+        "m3": "31387130"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Fueloil Marinos",
+        "m3": "10719222"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "117085654"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "7084115"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Grasas",
+        "m3": "95173"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Kerosene",
+        "m3": "244858"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "45928700"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "9486069"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Propano y Otros C3",
+        "m3": "1770644"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1914724"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5665810"
+    },
+    {
+        "año": "2017",
+        "mes": "6",
+        "concepto": "Solventes Hexano",
+        "m3": "1533573"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "138876"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Aguarras",
+        "m3": "28854"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Bases Lubricantes",
+        "m3": "11920"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Butano y Otros C3",
+        "m3": "13946270"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "44608725"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Fueloil",
+        "m3": "31969740"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Fueloil Marinos",
+        "m3": "7112474"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "103594103"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "6125396"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Grasas",
+        "m3": "103189"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Kerosene",
+        "m3": "141856"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "19036382"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "9777455"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Propano y Otros C3",
+        "m3": "2081852"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2195622"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6793843"
+    },
+    {
+        "año": "2017",
+        "mes": "7",
+        "concepto": "Solventes Hexano",
+        "m3": "2115488"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "161412"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Aguarras",
+        "m3": "3771"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Bases Lubricantes",
+        "m3": "5400"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Butano y Otros C3",
+        "m3": "12562590"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "43549669"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Fueloil",
+        "m3": "18108251"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Fueloil Marinos",
+        "m3": "19526804"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "97379366"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "7092901"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Grasas",
+        "m3": "151952"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Kerosene",
+        "m3": "254223"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "47936316"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10564696"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Propano y Otros C3",
+        "m3": "2199735"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1955210"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6060556"
+    },
+    {
+        "año": "2017",
+        "mes": "8",
+        "concepto": "Solventes Hexano",
+        "m3": "893517"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "160341"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Aguarras",
+        "m3": "5108"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Bases Lubricantes",
+        "m3": "358239"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Butano y Otros C3",
+        "m3": "12851030"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "39854478"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Fueloil",
+        "m3": "16187747"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Fueloil Marinos",
+        "m3": "20074641"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "110281124"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "185122"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Grasas",
+        "m3": "83234"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Kerosene",
+        "m3": "222416"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "44283902"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10828083"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Propano y Otros C3",
+        "m3": "2001579"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1986768"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5683209"
+    },
+    {
+        "año": "2017",
+        "mes": "9",
+        "concepto": "Solventes Hexano",
+        "m3": "894260"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "130232"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Aguarras",
+        "m3": "3929"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Bases Lubricantes",
+        "m3": "11416"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Butano y Otros C3",
+        "m3": "12903571"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "48052710"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Fueloil",
+        "m3": "23673355"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Fueloil Marinos",
+        "m3": "13808368"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "104136422"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "9539912"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Grasas",
+        "m3": "55713"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Kerosene",
+        "m3": "190035"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "41997350"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "11102029"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Propano y Otros C3",
+        "m3": "1991431"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2113068"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Solventes Aromáticos",
+        "m3": "8432851"
+    },
+    {
+        "año": "2017",
+        "mes": "10",
+        "concepto": "Solventes Hexano",
+        "m3": "709146"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "141662"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Aguarras",
+        "m3": "4952"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Bases Lubricantes",
+        "m3": "1505"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Butano y Otros C3",
+        "m3": "11524348"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "6511537"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Fueloil",
+        "m3": "20498561"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Fueloil Marinos",
+        "m3": "11000763"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "104680144"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "158116"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Grasas",
+        "m3": "44461"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Kerosene",
+        "m3": "241662"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "44061012"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10627016"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Propano y Otros C3",
+        "m3": "1220535"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Solventes Alifáticos",
+        "m3": "3026841"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Solventes Aromáticos",
+        "m3": "7045368"
+    },
+    {
+        "año": "2017",
+        "mes": "11",
+        "concepto": "Solventes Hexano",
+        "m3": "1046320"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "180768"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Aguarras",
+        "m3": "3099"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Bases Lubricantes",
+        "m3": "7604"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Butano y Otros C3",
+        "m3": "10159711"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "35692283"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Fueloil",
+        "m3": "9065921"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Fueloil Marinos",
+        "m3": "12087155"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "107377361"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "7425348"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Grasas",
+        "m3": "34776"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Kerosene",
+        "m3": "225281"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "49490183"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "12163215"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Propano y Otros C3",
+        "m3": "2328899"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2153209"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Solventes Aromáticos",
+        "m3": "4387588"
+    },
+    {
+        "año": "2017",
+        "mes": "12",
+        "concepto": "Solventes Hexano",
+        "m3": "557749"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "163233"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Aguarras",
+        "m3": "4382"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Bases Lubricantes",
+        "m3": "8054"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Butano y Otros C3",
+        "m3": "11900789"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "41043675"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Fueloil",
+        "m3": "5116806"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Fueloil Marinos",
+        "m3": "12003616"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "66590328"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "204345"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Grasas",
+        "m3": "79253"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Kerosene",
+        "m3": "269505"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "39694428"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "11581354"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Propano y Otros C3",
+        "m3": "2311134"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2218196"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5672565"
+    },
+    {
+        "año": "2018",
+        "mes": "1",
+        "concepto": "Solventes Hexano",
+        "m3": "1461519"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "155335"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Aguarras",
+        "m3": "3381"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Bases Lubricantes",
+        "m3": "10149"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Butano y Otros C3",
+        "m3": "10401839"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "20932212"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Fueloil",
+        "m3": "1610085"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Fueloil Marinos",
+        "m3": "13939475"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "95068685"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "6015703"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Grasas",
+        "m3": "47974"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Kerosene",
+        "m3": "309172"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "43794127"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "10000905"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Propano y Otros C3",
+        "m3": "1850436"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1973603"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6128133"
+    },
+    {
+        "año": "2018",
+        "mes": "2",
+        "concepto": "Solventes Hexano",
+        "m3": "1345576"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "164739"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Aguarras",
+        "m3": "2474"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Bases Lubricantes",
+        "m3": "11452"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Butano y Otros C3",
+        "m3": "8790969"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "5569969"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Fueloil",
+        "m3": "3544423"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Fueloil Marinos",
+        "m3": "11565656"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "54279827"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "296220"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Grasas",
+        "m3": "94807"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Kerosene",
+        "m3": "124616"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "31240003"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "8100938"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Propano y Otros C3",
+        "m3": "1940036"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2011268"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5460920"
+    },
+    {
+        "año": "2018",
+        "mes": "3",
+        "concepto": "Solventes Hexano",
+        "m3": "681881"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "158003"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Aguarras",
+        "m3": "2680"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Bases Lubricantes",
+        "m3": "9026"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Butano y Otros C3",
+        "m3": "11342718"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "15445826"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Fueloil",
+        "m3": "7384940"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Fueloil Marinos",
+        "m3": "8288430"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "51132869"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "166165"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Grasas",
+        "m3": "102378"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Kerosene",
+        "m3": "172609"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "24494513"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "7294459"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Propano y Otros C3",
+        "m3": "1951333"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Solventes Alifáticos",
+        "m3": "3122919"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Solventes Aromáticos",
+        "m3": "11093145"
+    },
+    {
+        "año": "2018",
+        "mes": "4",
+        "concepto": "Solventes Hexano",
+        "m3": "1974846"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "138950"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Aguarras",
+        "m3": "4356"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Bases Lubricantes",
+        "m3": "12619"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Butano y Otros C3",
+        "m3": "11562606"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "18925557"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Fueloil",
+        "m3": "7179188"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Fueloil Marinos",
+        "m3": "13244155"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "56994297"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "129401"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Grasas",
+        "m3": "100387"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Kerosene",
+        "m3": "140699"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "31087148"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "6183341"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Propano y Otros C3",
+        "m3": "2486076"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1834018"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5316580"
+    },
+    {
+        "año": "2018",
+        "mes": "5",
+        "concepto": "Solventes Hexano",
+        "m3": "4552"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "128509"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Aguarras",
+        "m3": "2488"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Bases Lubricantes",
+        "m3": "1027"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Butano y Otros C3",
+        "m3": "6473636"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "10189394"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Fueloil",
+        "m3": "908594"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Fueloil Marinos",
+        "m3": "6203102"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "26496661"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "154895"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Grasas",
+        "m3": "96713"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Kerosene",
+        "m3": "147744"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "28574208"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "6245383"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Propano y Otros C3",
+        "m3": "1167349"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1028177"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Solventes Aromáticos",
+        "m3": "4583157"
+    },
+    {
+        "año": "2018",
+        "mes": "6",
+        "concepto": "Solventes Hexano",
+        "m3": "1574859"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "152202"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Aguarras",
+        "m3": "2928"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Bases Lubricantes",
+        "m3": "7770"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Butano y Otros C3",
+        "m3": "3034798"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "12245447"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Fueloil",
+        "m3": "1214331"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Fueloil Marinos",
+        "m3": "6515559"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "13386716"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "198241"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Grasas",
+        "m3": "147962"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Kerosene",
+        "m3": "74881"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "23233781"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "5768277"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Propano y Otros C3",
+        "m3": "79444"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Solventes Alifáticos",
+        "m3": "3004103"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6036579"
+    },
+    {
+        "año": "2018",
+        "mes": "7",
+        "concepto": "Solventes Hexano",
+        "m3": "1531303"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "171256"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Aguarras",
+        "m3": "3359"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Bases Lubricantes",
+        "m3": "7292"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Butano y Otros C3",
+        "m3": "4631104"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "12690674"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Fueloil",
+        "m3": "4011176"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Fueloil Marinos",
+        "m3": "5281844"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "26168635"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "152303"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Grasas",
+        "m3": "108125"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Kerosene",
+        "m3": "148328"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "24867639"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "5630907"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Propano y Otros C3",
+        "m3": "733925"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2426834"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Solventes Aromáticos",
+        "m3": "2519808"
+    },
+    {
+        "año": "2018",
+        "mes": "8",
+        "concepto": "Solventes Hexano",
+        "m3": "750273"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "130152"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Aguarras",
+        "m3": "3262"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Bases Lubricantes",
+        "m3": "6335"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Butano y Otros C3",
+        "m3": "7636362"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "27363542"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Fueloil",
+        "m3": "7996802"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Fueloil Marinos",
+        "m3": "12858050"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "40110621"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "149104"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Grasas",
+        "m3": "86468"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Kerosene",
+        "m3": "73839"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "21085909"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "4305791"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Propano y Otros C3",
+        "m3": "2536837"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1947998"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Solventes Aromáticos",
+        "m3": "1614414"
+    },
+    {
+        "año": "2018",
+        "mes": "9",
+        "concepto": "Solventes Hexano",
+        "m3": "506059"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "147631"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Aguarras",
+        "m3": "4723"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Bases Lubricantes",
+        "m3": "10196"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Butano y Otros C3",
+        "m3": "10596760"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "12290198"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Fueloil",
+        "m3": "14515013"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Fueloil Marinos",
+        "m3": "14524526"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "48059720"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "153694"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Grasas",
+        "m3": "89679"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Kerosene",
+        "m3": "135695"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "24954298"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "4658115"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Propano y Otros C3",
+        "m3": "2613384"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1520330"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Solventes Aromáticos",
+        "m3": "7872395"
+    },
+    {
+        "año": "2018",
+        "mes": "10",
+        "concepto": "Solventes Hexano",
+        "m3": "1331486"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "157506"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Aguarras",
+        "m3": "3619"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Bases Lubricantes",
+        "m3": "20297"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Butano y Otros C3",
+        "m3": "10032715"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "12066944"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Fueloil",
+        "m3": "8504940"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Fueloil Marinos",
+        "m3": "13781913"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "58895561"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "132454"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Grasas",
+        "m3": "54052"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Kerosene",
+        "m3": "211"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "26551472"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "4479420"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Propano y Otros C3",
+        "m3": "1789940"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1872552"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6327595"
+    },
+    {
+        "año": "2018",
+        "mes": "11",
+        "concepto": "Solventes Hexano",
+        "m3": "949075"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "159266"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Aguarras",
+        "m3": "3072"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Bases Lubricantes",
+        "m3": "9403"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Butano y Otros C3",
+        "m3": "9921503"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "29227568"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Fueloil",
+        "m3": "17401952"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Fueloil Marinos",
+        "m3": "16041186"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "60453826"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "139713"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Grasas",
+        "m3": "53586"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Kerosene",
+        "m3": "66862"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "28444815"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "5205097"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Propano y Otros C3",
+        "m3": "1403205"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1702360"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Solventes Aromáticos",
+        "m3": "7223644"
+    },
+    {
+        "año": "2018",
+        "mes": "12",
+        "concepto": "Solventes Hexano",
+        "m3": "825603"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "163321"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Aguarras",
+        "m3": "2706"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Bases Lubricantes",
+        "m3": "7726"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Butano y Otros C3",
+        "m3": "12815643"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "10034131"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Fueloil",
+        "m3": "176541"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Fueloil Marinos",
+        "m3": "16569915"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "64086997"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "167949"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Grasas",
+        "m3": "48326"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Kerosene",
+        "m3": "50750"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "31888992"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "5370609"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Propano y Otros C3",
+        "m3": "2483331"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1362915"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6720308"
+    },
+    {
+        "año": "2019",
+        "mes": "1",
+        "concepto": "Solventes Hexano",
+        "m3": "687210"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "149672"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Aguarras",
+        "m3": "4376"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Bases Lubricantes",
+        "m3": "329630"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Butano y Otros C3",
+        "m3": "9905333"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "14527349"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Fueloil",
+        "m3": "5232683"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Fueloil Marinos",
+        "m3": "12688197"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "54942823"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "132435"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Grasas",
+        "m3": "51951"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Kerosene",
+        "m3": "51211"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "30239922"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "5533948"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Propano y Otros C3",
+        "m3": "1959962"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Solventes Alifáticos",
+        "m3": "912891"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Solventes Aromáticos",
+        "m3": "7275085"
+    },
+    {
+        "año": "2019",
+        "mes": "2",
+        "concepto": "Solventes Hexano",
+        "m3": "382035"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "147781"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Aguarras",
+        "m3": "2767"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Bases Lubricantes",
+        "m3": "9015"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Butano y Otros C3",
+        "m3": "11783726"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "17052104"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Fueloil",
+        "m3": "10564094"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Fueloil Marinos",
+        "m3": "14168249"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "46365227"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "163539"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Grasas",
+        "m3": "70384"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Kerosene",
+        "m3": "757"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "32941874"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "4734007"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Propano y Otros C3",
+        "m3": "2878296"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1327114"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Solventes Aromáticos",
+        "m3": "9918213"
+    },
+    {
+        "año": "2019",
+        "mes": "3",
+        "concepto": "Solventes Hexano",
+        "m3": "2001886"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "138163"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Aguarras",
+        "m3": "3840"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Bases Lubricantes",
+        "m3": "8525"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Butano y Otros C3",
+        "m3": "5926742"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "9652987"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Fueloil",
+        "m3": "7035800"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Fueloil Marinos",
+        "m3": "46561"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "25729585"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "71106"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Grasas",
+        "m3": "67152"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Kerosene",
+        "m3": "43299"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "32680998"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "4545684"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Propano y Otros C3",
+        "m3": "1166209"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1863655"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6002022"
+    },
+    {
+        "año": "2019",
+        "mes": "4",
+        "concepto": "Solventes Hexano",
+        "m3": "1927278"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "143274"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Aguarras",
+        "m3": "3930"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Bases Lubricantes",
+        "m3": "15904"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Butano y Otros C3",
+        "m3": "47167824"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "10235975"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Fueloil",
+        "m3": "228030"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Fueloil Marinos",
+        "m3": "96777"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "874556"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "132182"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Grasas",
+        "m3": "73497"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Kerosene",
+        "m3": "991"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "562976"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "156284"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Propano y Otros C3",
+        "m3": "65002"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Solventes Alifáticos",
+        "m3": "8663163"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Solventes Aromáticos",
+        "m3": "62524356"
+    },
+    {
+        "año": "2019",
+        "mes": "5",
+        "concepto": "Solventes Hexano",
+        "m3": "17996721"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "136582"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Aguarras",
+        "m3": "2569"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Bases Lubricantes",
+        "m3": "7660"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Butano y Otros C3",
+        "m3": "34429780"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "121831601"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Fueloil",
+        "m3": "145488"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Fueloil Marinos",
+        "m3": "56898"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "812815"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "131992"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Grasas",
+        "m3": "43618"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Kerosene",
+        "m3": "74912"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "514375"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "134153"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Propano y Otros C3",
+        "m3": "62690"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Solventes Alifáticos",
+        "m3": "10075965"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Solventes Aromáticos",
+        "m3": "69391776"
+    },
+    {
+        "año": "2019",
+        "mes": "6",
+        "concepto": "Solventes Hexano",
+        "m3": "14855114"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "152254"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Aguarras",
+        "m3": "3507"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Bases Lubricantes",
+        "m3": "12133"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Butano y Otros C3",
+        "m3": "40899467"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "94195593"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Fueloil",
+        "m3": "138705"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Fueloil Marinos",
+        "m3": "59625"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "833309"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "132219"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Grasas",
+        "m3": "123753"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Kerosene",
+        "m3": "13257"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "587271"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "186271"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Propano y Otros C3",
+        "m3": "78662"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Solventes Alifáticos",
+        "m3": "11423651"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Solventes Aromáticos",
+        "m3": "80348925"
+    },
+    {
+        "año": "2019",
+        "mes": "7",
+        "concepto": "Solventes Hexano",
+        "m3": "8493681"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "169405"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Aguarras",
+        "m3": "2649"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Bases Lubricantes",
+        "m3": "10155"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Butano y Otros C3",
+        "m3": "2914023"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "4562485"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Fueloil",
+        "m3": "1503823"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Fueloil Marinos",
+        "m3": "77747"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "816295"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "178612"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Grasas",
+        "m3": "168010"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Kerosene",
+        "m3": "1045"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "552040"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "204167"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Propano y Otros C3",
+        "m3": "81030"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Solventes Alifáticos",
+        "m3": "603751"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6226285"
+    },
+    {
+        "año": "2019",
+        "mes": "8",
+        "concepto": "Solventes Hexano",
+        "m3": "1234937"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "138925"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Aguarras",
+        "m3": "4874"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Bases Lubricantes",
+        "m3": "5015"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Butano y Otros C3",
+        "m3": "3753842"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "8959578"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Fueloil",
+        "m3": "1563344"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Fueloil Marinos",
+        "m3": "60507"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "5040717"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "191263"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Grasas",
+        "m3": "93663"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Kerosene",
+        "m3": "43411"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "500877"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "178879"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Propano y Otros C3",
+        "m3": "71734"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1533938"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Solventes Aromáticos",
+        "m3": "4401056"
+    },
+    {
+        "año": "2019",
+        "mes": "9",
+        "concepto": "Solventes Hexano",
+        "m3": "618612"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "174370"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Aguarras",
+        "m3": "4392"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Bases Lubricantes",
+        "m3": "14737"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Butano y Otros C3",
+        "m3": "3915864"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "8177548"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Fueloil",
+        "m3": "132726"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Fueloil Marinos",
+        "m3": "77725"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "892176"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "168625"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Grasas",
+        "m3": "229728"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Kerosene",
+        "m3": "61480"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "593440"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "174439"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Propano y Otros C3",
+        "m3": "89893"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1319438"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5923023"
+    },
+    {
+        "año": "2019",
+        "mes": "10",
+        "concepto": "Solventes Hexano",
+        "m3": "1185866"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "147758"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Aguarras",
+        "m3": "4144"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Bases Lubricantes",
+        "m3": "8672"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Butano y Otros C3",
+        "m3": "10948596"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "62989189"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Fueloil",
+        "m3": "11036827"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Fueloil Marinos",
+        "m3": "24315059"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "56878482"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "352756"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Grasas",
+        "m3": "212245"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Kerosene",
+        "m3": "542"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "39414978"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "4891413"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Propano y Otros C3",
+        "m3": "2397334"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Solventes Alifáticos",
+        "m3": "5586530"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Solventes Aromáticos",
+        "m3": "32121919"
+    },
+    {
+        "año": "2019",
+        "mes": "11",
+        "concepto": "Solventes Hexano",
+        "m3": "9605753"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "171306"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Aguarras",
+        "m3": "2671"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Bases Lubricantes",
+        "m3": "8968"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Butano y Otros C3",
+        "m3": "3641079"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "13909809"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Fueloil",
+        "m3": "108166"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Fueloil Marinos",
+        "m3": "118406"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "889274"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "169875"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Grasas",
+        "m3": "25987"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Kerosene",
+        "m3": "54763"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "600098"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "185189"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Propano y Otros C3",
+        "m3": "80308"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Solventes Alifáticos",
+        "m3": "625937"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Solventes Aromáticos",
+        "m3": "3573966"
+    },
+    {
+        "año": "2019",
+        "mes": "12",
+        "concepto": "Solventes Hexano",
+        "m3": "5193341"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "176193"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Aguarras",
+        "m3": "4591"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Bases Lubricantes",
+        "m3": "6664"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Butano y Otros C3",
+        "m3": "2657282"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "14430650"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Fueloil",
+        "m3": "143646"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Fueloil Marinos",
+        "m3": "115259"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "6487749"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "174843"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Grasas",
+        "m3": "221292"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Kerosene",
+        "m3": "694"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "593955"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "199592"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Propano y Otros C3",
+        "m3": "80977"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1316273"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6292919"
+    },
+    {
+        "año": "2020",
+        "mes": "1",
+        "concepto": "Solventes Hexano",
+        "m3": "886359"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "154154"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Aguarras",
+        "m3": "4180"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Bases Lubricantes",
+        "m3": "12547"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Butano y Otros C3",
+        "m3": "3022486"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "11160898"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Fueloil",
+        "m3": "145821"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Fueloil Marinos",
+        "m3": "85947"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "5578683"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "136669"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Grasas",
+        "m3": "58195"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Kerosene",
+        "m3": "37285"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "537771"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "162464"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Propano y Otros C3",
+        "m3": "76421"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2087227"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Solventes Aromáticos",
+        "m3": "8586353"
+    },
+    {
+        "año": "2020",
+        "mes": "2",
+        "concepto": "Solventes Hexano",
+        "m3": "768691"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "118121"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Aguarras",
+        "m3": "3139"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Bases Lubricantes",
+        "m3": "195147"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Butano y Otros C3",
+        "m3": "3367799"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "5804452"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Fueloil",
+        "m3": "122964"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Fueloil Marinos",
+        "m3": "101741"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "720400"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "202315"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Grasas",
+        "m3": "235461"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Kerosene",
+        "m3": "584"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "489731"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "155139"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Propano y Otros C3",
+        "m3": "62139"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Solventes Alifáticos",
+        "m3": "659719"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5453388"
+    },
+    {
+        "año": "2020",
+        "mes": "3",
+        "concepto": "Solventes Hexano",
+        "m3": "548272"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "28941"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Aguarras",
+        "m3": "1325"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Bases Lubricantes",
+        "m3": "58"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Butano y Otros C3",
+        "m3": "9914005"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "15874486"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Fueloil",
+        "m3": "5183601"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Fueloil Marinos",
+        "m3": "39479854"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "51270320"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "55643"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Grasas",
+        "m3": "11572"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Kerosene",
+        "m3": "60888"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "18366699"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "1314932"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Propano y Otros C3",
+        "m3": "1829247"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1975"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Solventes Aromáticos",
+        "m3": "6278378"
+    },
+    {
+        "año": "2020",
+        "mes": "4",
+        "concepto": "Solventes Hexano",
+        "m3": "1971408"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "18566"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Aguarras",
+        "m3": "1843"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Bases Lubricantes",
+        "m3": "4826"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Butano y Otros C3",
+        "m3": "8332384"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "9751523"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Fueloil",
+        "m3": "5991456"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Fueloil Marinos",
+        "m3": "23988124"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "55713923"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "66833"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Grasas",
+        "m3": "69257"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Kerosene",
+        "m3": "61858"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "26831455"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "2474228"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Propano y Otros C3",
+        "m3": "1761378"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2892"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Solventes Aromáticos",
+        "m3": "3866453"
+    },
+    {
+        "año": "2020",
+        "mes": "5",
+        "concepto": "Solventes Hexano",
+        "m3": "847865"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "21674"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Aguarras",
+        "m3": "2590"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Bases Lubricantes",
+        "m3": "17638"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Butano y Otros C3",
+        "m3": "71572"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "2459766"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Fueloil",
+        "m3": "156639"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Fueloil Marinos",
+        "m3": "892099"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "984229"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "172849"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Grasas",
+        "m3": "798"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Kerosene",
+        "m3": "1141"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "361068"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "109915"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Propano y Otros C3",
+        "m3": "57233"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Solventes Alifáticos",
+        "m3": "4752"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Solventes Aromáticos",
+        "m3": "1667"
+    },
+    {
+        "año": "2020",
+        "mes": "6",
+        "concepto": "Solventes Hexano",
+        "m3": "3112"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "13018"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Aguarras",
+        "m3": "5381"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Bases Lubricantes",
+        "m3": "11640"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Butano y Otros C3",
+        "m3": "2208340"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "11925981"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Fueloil",
+        "m3": "223943"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Fueloil Marinos",
+        "m3": "1109744"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "5519904"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "190581"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Grasas",
+        "m3": "1213541"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Kerosene",
+        "m3": "78575"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "416816"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "127152"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Propano y Otros C3",
+        "m3": "60203"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1419572"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Solventes Aromáticos",
+        "m3": "8801273"
+    },
+    {
+        "año": "2020",
+        "mes": "7",
+        "concepto": "Solventes Hexano",
+        "m3": "451642"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "5706"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Aguarras",
+        "m3": "4658"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Bases Lubricantes",
+        "m3": "13424"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Butano y Otros C3",
+        "m3": "2260859"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "11576015"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Fueloil",
+        "m3": "189970"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Fueloil Marinos",
+        "m3": "478719"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "930700"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "203601"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Grasas",
+        "m3": "111004"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Kerosene",
+        "m3": "104227"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "394936"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "145718"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Propano y Otros C3",
+        "m3": "54149"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1679606"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Solventes Aromáticos",
+        "m3": "10222610"
+    },
+    {
+        "año": "2020",
+        "mes": "8",
+        "concepto": "Solventes Hexano",
+        "m3": "1401813"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "7990"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Aguarras",
+        "m3": "3203"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Bases Lubricantes",
+        "m3": "10216"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Butano y Otros C3",
+        "m3": "1069544"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "12619183"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Fueloil",
+        "m3": "163657"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Fueloil Marinos",
+        "m3": "443657"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "5610751"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "193246"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Grasas",
+        "m3": "155935"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Kerosene",
+        "m3": "69612"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "374693"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "125659"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Propano y Otros C3",
+        "m3": "35083"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1848697"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Solventes Aromáticos",
+        "m3": "5591461"
+    },
+    {
+        "año": "2020",
+        "mes": "9",
+        "concepto": "Solventes Hexano",
+        "m3": "675470"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "23819"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Aguarras",
+        "m3": "4547"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Bases Lubricantes",
+        "m3": "6396"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Butano y Otros C3",
+        "m3": "2806722"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "15027845"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Fueloil",
+        "m3": "218108"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Fueloil Marinos",
+        "m3": "454410"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "5726452"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "236752"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Grasas",
+        "m3": "295099"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Kerosene",
+        "m3": "119460"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "433103"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "105844"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Propano y Otros C3",
+        "m3": "36845"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1759409"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Solventes Aromáticos",
+        "m3": "11951767"
+    },
+    {
+        "año": "2020",
+        "mes": "10",
+        "concepto": "Solventes Hexano",
+        "m3": "1363740"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "40080"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Aguarras",
+        "m3": "5510"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Bases Lubricantes",
+        "m3": "8680"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Butano y Otros C3",
+        "m3": "3789651"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "14331463"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Fueloil",
+        "m3": "179130"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Fueloil Marinos",
+        "m3": "36444"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "5136088"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "161958"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Grasas",
+        "m3": "188969"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Kerosene",
+        "m3": "47930"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "441951"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "151155"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Propano y Otros C3",
+        "m3": "57952"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Solventes Alifáticos",
+        "m3": "2098903"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Solventes Aromáticos",
+        "m3": "8478092"
+    },
+    {
+        "año": "2020",
+        "mes": "11",
+        "concepto": "Solventes Hexano",
+        "m3": "1167866"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Aerokerosene (Jet)",
+        "m3": "47026"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Aguarras",
+        "m3": "5688"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Bases Lubricantes",
+        "m3": "5180"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Butano y Otros C3",
+        "m3": "3523911"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Cortes de Nafta Virgen",
+        "m3": "15928649"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Fueloil",
+        "m3": "208745"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Fueloil Marinos",
+        "m3": "40047"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Gasoil Grado 2 (Común)",
+        "m3": "706400"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Gasoil Grado 3 (Ultra)",
+        "m3": "217952"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Grasas",
+        "m3": "133500"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Kerosene",
+        "m3": "56154"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Nafta Grado 2 (Súper)",
+        "m3": "497083"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Nafta Grado 3 (Ultra)",
+        "m3": "180764"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Propano y Otros C3",
+        "m3": "54796"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Solventes Alifáticos",
+        "m3": "1937853"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Solventes Aromáticos",
+        "m3": "7961167"
+    },
+    {
+        "año": "2020",
+        "mes": "12",
+        "concepto": "Solventes Hexano",
+        "m3": "743623"
+    }
+]
