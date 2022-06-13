@@ -63,8 +63,7 @@
                     filled
                     color="red"
                     class="caption"
-                    value="
-                  Pegue aquí el código del receptor"
+                    value="Pegue aquí"
                   ></v-textarea>
                 </v-col>
                 <v-col cols="6" md="4">
@@ -159,7 +158,7 @@
                     color="red"
                     class="caption"
                     value="
-                  Pegue aquí el código del emisor"
+                  Pegue aquí "
                   ></v-textarea>
                 </v-col>
                 <v-col cols="6" md="4">
@@ -239,7 +238,7 @@ export default {
       textosnackbar1:
         "1) Copie el texto, puede ayudarse con el icono copiar. (en un servidor web de aplicaciones estos pasos serían automáticos)",
       textosnackbar2:
-        '2) Abra esta aplicación en otro navegador, en este dispositivo u en otro. Esta vez elija "Receptor" y allí pegará el codigo. para llevar el código no use gmail porque inserta lineas, puede usarse whatsapp',
+        '2) Abra esta aplicación en otro navegador, en este dispositivo o en otro. Esta vez elija "Receptor" y allí pegue el coóigo. para llevar el código no use gmail porque inserta lineas, puede usar whatsapp',
       textosnackbar3:
         "3) Mas adelante volverá a esta pantalla a pegar la respuesta",
       textosnackbar4: "4) Pegue el código y haga click en Procesar",
