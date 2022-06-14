@@ -1,21 +1,51 @@
 <template>
   <div>
-    <v-alert border="left" :color="Complementario1" dark v-if="muestramensaje">
-      <p>
-        Videoconferencia en una sola direccion mediante conexion peer to peer,
-        no requiere servidor.
-      </p>
-      Comience eligiendo "emisor", además abra esta misma página en otro
-      dispositivo o en otro navegador y allí elija "receptor"
-      <v-btn
-        class="mx-3"
-        :color="Complementario3"
-        @click="muestramensaje = false"
+    <v-expand-transition>
+      <v-alert
+        border="left"
+        :color="Complementario1"
+        dark
+        v-if="muestramensaje"
       >
-        Cerrar
-      </v-btn>
-    </v-alert>
+        <p>
+          Videoconferencia en una sola direccion mediante conexion peer to peer,
+          no requiere servidor.
+        </p>
+        Comience eligiendo "emisor", además abra esta misma página en otro
+        dispositivo o en otro navegador y allí elija "receptor"
+        <p>En el video se muestra el funcionamiento usando Chrome y Firefox</p>
+        <v-btn
+          class="mx-3"
+          :color="Complementario3"
+          @click="muestramensaje = false"
+        >
+          Cerrar
+        </v-btn>
+      </v-alert>
+    </v-expand-transition>
 
+    <v-expand-transition>
+      <v-row justify="center" style="margin-bottom: 20px">
+        <v-banner
+          v-if="muestramensaje"
+          :color="Complementario2"
+          elevation="4"
+          transition="slide-y-transition"
+          width="592"
+        >
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/t5tVdR65Lvc?controls=0"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </v-banner>
+      </v-row>
+    </v-expand-transition>
     <v-container>
       <v-snackbar v-model="snackbarAlert3" color="red darken-1">
         {{ textosnackbarAlert3 }}
@@ -63,7 +93,7 @@
                     filled
                     color="red"
                     class="caption"
-                    value="Pegue aquí"
+                    value="Pegue aquí el código del receptor"
                   ></v-textarea>
                 </v-col>
                 <v-col cols="6" md="4">
@@ -158,7 +188,7 @@
                     color="red"
                     class="caption"
                     value="
-                  Pegue aquí "
+                 Pegue aquí el código del emisor"
                   ></v-textarea>
                 </v-col>
                 <v-col cols="6" md="4">
