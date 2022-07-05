@@ -4,9 +4,8 @@ import VueRouter from "vue-router";
 
 
 Vue.use(VueRouter);
-
+//nombre igual que el path
 const routes = [
-
 
   {
     path: "/graficodinamico",
@@ -16,19 +15,14 @@ const routes = [
   },
   {
     path: "/",
-    name: "Home",
+    name: "graficodinamico",
     component: () =>
       import(/* webpackChunkName: "datos"*/ "../views/GraficoDinamico.vue"),
   }, {
-    path: "./",
-    name: "Prueba",
+    path: "/relays",
+    name: "relays",
     component: () =>
-      import(/* webpackChunkName: "datos"*/ "../views/Tabla.vue"),
-  }, {
-    path: "presentacion/",
-    name: "Prueba2",
-    component: () =>
-      import(/* webpackChunkName: "datos"*/ "../views/Asign.vue"),
+      import(/* webpackChunkName: "datos"*/ "../views/Relays.vue"),
   }, {
     path: "/tabla",
     name: "tabla",
@@ -43,7 +37,7 @@ const routes = [
     path: "/peer",
     name: "peer",
     component: () =>
-      import(/* webpackChunkName: "datos"*/ "../views/video.vue"),
+      import(/* webpackChunkName: "datos"*/ "../views/Video.vue"),
   }, {
     path: "/sorteo",
     name: "sorteo",

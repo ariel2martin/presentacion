@@ -70,34 +70,40 @@ export default {
     items: [
       {
         href: "graficodinamico",
-        router: true,
+
         text: "Gráfico dinámico",
         icon: "mdi-swap-vertical-variant",
       },
       {
         href: "sorteo",
-        router: true,
+
         text: "Grupo de juegos",
         icon: "mdi-tournament",
       },
 
       {
         href: "tabla",
-        router: true,
+
         text: "Tabla",
         icon: "mdi-form-select",
       },
       {
         href: "asign",
-        router: true,
+
         text: "Aplicar",
         icon: "mdi-shuffle",
       },
       {
         href: "peer",
-        router: true,
+
         text: "Videoconferencia",
         icon: "mdi-video-outline",
+      },
+      {
+        href: "relays",
+
+        text: "IoT relays",
+        icon: "mdi-electric-switch",
       },
     ],
   }),
