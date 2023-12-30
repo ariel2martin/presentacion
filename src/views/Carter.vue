@@ -1,0 +1,230 @@
+<template>
+  <v-container>
+    <v-card class="mx-auto" max-width="600s">
+      <v-card-text>
+        <p class="text-h4 titulo">Reglas del juego</p>
+
+        <div class="text--primary">
+          son tres personajes, creativo1, creativo2 y observador en cada roda se
+          rotarán los roles <br />
+          creativo1 elige un tema y lanza el contador de tiempo<br />
+          la aplicacion eligirá al azar una propuesta, la leerá y lanzará el
+          contador de tiempo<br />
+          creativo1 da una idea sobre éstey detiene el conador de tiempoque le
+          corresponde<br />
+          creativo 2 rebate la idea y detiene el contador de tiempo que le
+          corresponde<br />
+          al finalizar cualquiera de los tiempos maxomos, el observador hara lo
+          suyo<br />
+          todos votan al mejor
+        </div>
+      </v-card-text>
+      <v-card-actions>
+        <select class="form-control" id="voces" v-model="selectedVoice">
+          <option
+            v-for="(voice, index) in voiceList"
+            :key="index"
+            :data-lang="voice.lang"
+            :value="index"
+          >
+            {{ voice.name }} ({{ voice.lang }})
+          </option>
+        </select>
+      </v-card-actions>
+    </v-card>
+    <p></p>
+    <v-container class="bg-surface-variant" v-show="vcategorias">
+      <v-row align="center" justify="center">
+        <v-col v-for="(n, index) in lista" :key="index" cols="12" sm="3">
+          <v-card
+            loading
+            @click="
+              leer(lista[index].titulo);
+
+              vcategorias = false;
+              vsubcategorias = index;
+            "
+          >
+            <v-card-title>{{ lista[index].titulo }}</v-card-title>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <v-container
+      class="bg-surface-variant"
+      v-for="(n, index) in lista"
+      :key="index"
+      v-show="index == vsubcategorias"
+    >
+      <v-chip
+        v-for="(n, q) in lista[index].contenido"
+        :key="q"
+        variant="outlined"
+        @click="leer(lista[index].contenido[q])"
+      >
+        {{ lista[index].contenido[q] }}
+      </v-chip>
+    </v-container>
+  </v-container>
+</template>
+<script>
+import ABadge from "@/components/ABadge.vue";
+import config from "../../configuraciones.js";
+import axios from "axios";
+
+export default {
+  components: { ABadge, config },
+  data() {
+    return {
+      isLoading: true,
+      name: "",
+      selectedVoice: 0,
+      synth: window.speechSynthesis,
+      voiceList: [],
+      leerTexto: new window.SpeechSynthesisUtterance(),
+      vcategorias: true,
+      vsubcategorias: 99,
+      lista: [
+        {
+          titulo: "historia",
+          contenido: {
+            1: "b",
+            2: "d",
+          },
+        },
+        {
+          titulo: "el unico",
+          contenido: {
+            1: "no se habla de Bruno",
+            2: "las vacas no vuelan",
+          },
+        },
+        {
+          titulo: "politica",
+          contenido: {
+            1: "K es caca",
+            2: "ni la derecha ni la izq son quienes mejoran el futuro, la tecnologia si",
+          },
+        },
+      ],
+    };
+  },
+
+  beforeCreate() {
+    console.log("beforeCreate");
+  },
+  created() {
+    console.log("created");
+  },
+  beforeMount() {
+    console.log("beforeMount");
+  },
+  mounted() {
+    // wait for voices to load
+    // I can't get FF to work without calling this first
+    // Chrome works on the onvoiceschanged function
+    this.voiceList = this.synth.getVoices();
+
+    if (this.voiceList.length) {
+      this.isLoading = false;
+    }
+
+    this.synth.onvoiceschanged = () => {
+      this.voiceList = this.synth.getVoices();
+      // give a bit of delay to show loading screen
+      // just for the sake of it, I suppose. Not the best reason
+      setTimeout(() => {
+        this.isLoading = false;
+      }, 800);
+    };
+
+    this.listenForSpeechEvents();
+  },
+  beforeUpdate() {
+    console.log("beforeUpdate");
+  },
+  updated() {
+    console.log("updated");
+  },
+  beforeDestroy() {
+    console.log("beforeDestroy");
+  },
+  destroyed() {
+    console.log("destroyed");
+  },
+  methods: {
+    /**
+     * React to speech events
+     */
+    listenForSpeechEvents() {
+      this.leerTexto.onstart = () => {
+        this.isLoading = true;
+      };
+
+      this.leerTexto.onend = () => {
+        this.isLoading = false;
+      };
+    },
+
+    /**
+     * Shout at the user
+     */
+    leer(que, desde) {
+      // it should be 'craic', but it doesn't sound right
+      this.leerTexto.text = que;
+
+      this.leerTexto.voice = this.voiceList[this.selectedVoice];
+
+      this.synth.speak(this.leerTexto);
+    },
+
+    async getData() {
+      const axiosHeaders = {
+        headers: {},
+        params: {},
+      };
+
+      await axios
+        .get("./derivados.json", axiosHeaders)
+        .then((res) => {
+          for (var i in res.data) this.tableData.push(res.data[i]);
+          this.loading = false;
+        })
+        .catch((e) => {
+          console.log(e);
+          return;
+        });
+    },
+    Left(s, n) {
+      if (n > s.length) n = s.length;
+      return s.substring(0, n);
+    },
+    Right(s, n) {
+      var t = s.length;
+      if (n > t) n = t;
+      return s.substring(t - n, t);
+    },
+    ExtractNumber(value) {
+      var n = parseInt(value);
+      return n == null || isNaN(n) ? 0 : n;
+    },
+  },
+};
+</script>
+<style scoped>
+.titulo {
+  color: coral;
+  background-color: aliceblue;
+  text-align: center;
+}
+
+#voces {
+  color: blue;
+  text-align: left;
+  margin: auto;
+}
+span {
+  color: white;
+}
+</style>

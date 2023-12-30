@@ -15,7 +15,7 @@ const routes = [
   },
   {
     path: "/",
-    name: "graficodinamico",
+    name: "graficodinamico ",
     component: () =>
       import(/* webpackChunkName: "datos"*/ "../views/GraficoDinamico.vue"),
   }, {
@@ -38,6 +38,11 @@ const routes = [
     name: "peer",
     component: () =>
       import(/* webpackChunkName: "datos"*/ "../views/Video.vue"),
+  }, {
+    path: "/carter",
+    name: "carter",
+    component: () =>
+      import(/* webpackChunkName: "datos"*/ "../views/Carter.vue"),
   }, {
     path: "/sorteo",
     name: "sorteo",

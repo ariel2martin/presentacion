@@ -105,6 +105,12 @@ export default {
         text: "IoT relays",
         icon: "mdi-electric-switch",
       },
+            {
+        href: "carter",
+
+        text: "Text to speach",
+        icon: "mdi-electric-switch",
+      },
     ],
   }),
 };

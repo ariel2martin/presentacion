@@ -1,6 +1,9 @@
 Live demo: https://ariel2martin.github.io/presentacion/
 
-otherwise download it and:
-  1)yarn install
-  2)in the .env file comment out or remove the line NODE_ENV=production
-  3)yarn serve
+otherwise download it and install:
+  nvm install 16
+  nvm use 16.20.2
+  npm install --global yarn
+  yarn install
+  yarn serve
+  in .env file comment out or remove the line NODE_ENV=production
