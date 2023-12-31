@@ -116,6 +116,42 @@
           </v-progress-circular>
         </div>
       </v-row>
+      <v-row>
+        <v-btn
+          variant="tonal"
+          @click="
+            stoptimer();
+
+            timer1 = 100;
+            timer2 = 100;
+            timer1show = '2:30';
+            timer2show = '2:00';
+            stoptimer1 = 999;
+            stoptimer2 = 999;
+            countdown(timer1show, 1, timer1);
+          "
+        >
+          Resetear reloj
+        </v-btn>
+        <v-btn
+          variant="tonal"
+          @click="
+            stoptimer();
+
+            timer1 = 100;
+            timer2 = 100;
+            timer1show = '2:30';
+            timer2show = '2:00';
+            stoptimer1 = 999;
+            stoptimer2 = 999;
+            vtemporizador = false;
+            vcategorias = true;
+            vsubcategorias = 99;
+          "
+        >
+          Volver a empezar
+        </v-btn></v-row
+      >
     </v-container>
   </v-container>
 </template>
@@ -141,8 +177,8 @@ export default {
       vtemporizador: false,
       timer1: 100,
       timer2: 100,
-      timer1show: "0:10",
-      timer2show: "0:10",
+      timer1show: "2:30",
+      timer2show: "2:00",
       stoptimer1: 999,
       stoptimer2: 999,
       audiofin1: new Audio(soundfin1),
@@ -224,13 +260,14 @@ export default {
       this.countdown(this.timer1show, 1);
     },
     stoptimer(cual) {
-      /*
-      var id = window.setTimeout(function () {}, 0);
-      while (id--) {
-          window.clearTimeout(id); // will do nothing if no timeout with id is present
-      }*/
       if (cual == 1) window.clearTimeout(this.stoptimer1);
-      else window.clearTimeout(this.stoptimer2);
+      else if (cual == 2) window.clearTimeout(this.stoptimer2);
+      else {
+        var id = window.setTimeout(function () {}, 0);
+        while (id--) {
+          window.clearTimeout(id); // will do nothing if no timeout with id is present
+        }
+      }
     },
     /**
      * React to speech events
@@ -275,7 +312,6 @@ export default {
           vm.timer1show = "Se acabó!";
           vm.timer1 = 0;
           vm.audiofin1.play();
-
           vm.countdown(vm.timer2show, 2, vm.timer2);
         } else {
           time = new Date(msLeft);
