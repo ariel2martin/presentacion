@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-card class="mx-auto" max-width="600s">
+    <v-card class="mx-auto" max-width="600s" v-show="!vtemporizador">
       <v-card-text>
         <p class="text-h4 titulo">Reglas del juego</p>
 
@@ -30,10 +30,6 @@
             {{ voice.name }} ({{ voice.lang }})
           </option>
         </select>
-        <v-btn variant="tonal" @click="stoptimer(1)"> stoptimer </v-btn>
-        <v-btn variant="tonal" @click="countdown(timer1show, 1, timer1)">
-          rearrancar
-        </v-btn>
       </v-card-actions>
     </v-card>
     <p></p>
@@ -65,7 +61,10 @@
         v-for="(n, q) in lista[index].contenido"
         :key="q"
         variant="outlined"
-        @click="leer(lista[index].contenido[q])"
+        @click="
+          leer(lista[index].contenido[q]);
+          muestrareloj();
+        "
       >
         {{ lista[index].contenido[q] }}
       </v-chip>
@@ -80,7 +79,7 @@
       </v-btn>
     </v-container>
     <v-container v-show="vtemporizador">
-      <v-row>
+      <v-row align="center" justify="center">
         <div class="text-center">
           <v-progress-circular
             @click="
@@ -98,7 +97,8 @@
           </v-progress-circular>
         </div></v-row
       >
-      <v-row>
+      <p></p>
+      <v-row align="center" justify="center">
         <div class="text-center">
           <v-progress-circular
             @click="
@@ -124,6 +124,8 @@ import ABadge from "@/components/ABadge.vue";
 import config from "../../configuraciones.js";
 import axios from "axios";
 
+import soundfin1 from "@/assets/mp3/fin1.mp3";
+import soundfin2 from "@/assets/mp3/fin2.mp3";
 export default {
   components: { ABadge, config },
   data() {
@@ -136,13 +138,16 @@ export default {
       leerTexto: new window.SpeechSynthesisUtterance(),
       vcategorias: true,
       vsubcategorias: 99,
-      vtemporizador: true,
+      vtemporizador: false,
       timer1: 100,
       timer2: 100,
-      timer1show: "2:30",
-      timer2show: "2:00",
+      timer1show: "0:10",
+      timer2show: "0:10",
       stoptimer1: 999,
       stoptimer2: 999,
+      audiofin1: new Audio(soundfin1),
+      audiofin2: new Audio(soundfin2),
+
       lista: [
         {
           titulo: "historia",
@@ -198,7 +203,6 @@ export default {
     };
 
     this.listenForSpeechEvents();
-    this.countdown(this.timer1show, 1);
   },
   beforeUpdate() {
     //console.log("beforeUpdate");
@@ -213,6 +217,12 @@ export default {
     //console.log("destroyed");
   },
   methods: {
+    muestrareloj() {
+      this.vcategorias = false;
+      this.vsubcategorias = 99;
+      this.vtemporizador = true;
+      this.countdown(this.timer1show, 1);
+    },
     stoptimer(cual) {
       /*
       var id = window.setTimeout(function () {}, 0);
@@ -249,7 +259,7 @@ export default {
     countdown(q, cual, desde = 100) {
       var minutes = parseInt(q.split(":")[0]);
       var seconds = parseInt(q.split(":")[1]);
-      console.log(minutes, "-", seconds);
+      //console.log(minutes, "-", seconds);
       var endTime, hours, mins, msLeft, time;
       var porcentajemaximo;
       var vm = this;
@@ -264,6 +274,9 @@ export default {
         if (msLeft < 1000 || desde == 0) {
           vm.timer1show = "Se acabó!";
           vm.timer1 = 0;
+          vm.audiofin1.play();
+
+          vm.countdown(vm.timer2show, 2, vm.timer2);
         } else {
           time = new Date(msLeft);
           hours = time.getUTCHours();
@@ -287,6 +300,7 @@ export default {
         if (msLeft < 1000 || desde == 0) {
           vm.timer2show = "Se acabó!";
           vm.timer2 = 0;
+          vm.audiofin2.play();
         } else {
           time = new Date(msLeft);
           hours = time.getUTCHours();
