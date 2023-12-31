@@ -65,6 +65,45 @@
       >
         {{ lista[index].contenido[q] }}
       </v-chip>
+      <v-btn
+        variant="tonal"
+        @click="
+          vcategorias = true;
+          vsubcategorias = 99;
+        "
+      >
+        volver
+      </v-btn>
+    </v-container>
+    <v-container v-show="vtemporizador">
+      <v-row>
+        <div class="text-center">
+          <v-progress-circular
+            class="v-progress-circular--visible"
+            :rotate="90"
+            :size="300"
+            :width="30"
+            :value="timer1"
+            color="red"
+          >
+            {{ timer1show }}
+          </v-progress-circular>
+        </div></v-row
+      >
+      <v-row>
+        <div class="text-center">
+          <v-progress-circular
+            class="v-progress-circular--visible"
+            :rotate="90"
+            :size="300"
+            :width="30"
+            :value="timer2"
+            color="red"
+          >
+            {{ timer2show }}
+          </v-progress-circular>
+        </div>
+      </v-row>
     </v-container>
   </v-container>
 </template>
@@ -85,6 +124,11 @@ export default {
       leerTexto: new window.SpeechSynthesisUtterance(),
       vcategorias: true,
       vsubcategorias: 99,
+      vtemporizador: true,
+      timer1: 100,
+      timer2: 100,
+      timer1show: "10:0",
+      timer2show: "0:0",
       lista: [
         {
           titulo: "historia",
@@ -112,13 +156,13 @@ export default {
   },
 
   beforeCreate() {
-    console.log("beforeCreate");
+    //console.log("beforeCreate");
   },
   created() {
-    console.log("created");
+    //console.log("created");
   },
   beforeMount() {
-    console.log("beforeMount");
+    //console.log("beforeMount");
   },
   mounted() {
     // wait for voices to load
@@ -140,18 +184,19 @@ export default {
     };
 
     this.listenForSpeechEvents();
+    this.countdown(0, 30);
   },
   beforeUpdate() {
-    console.log("beforeUpdate");
+    //console.log("beforeUpdate");
   },
   updated() {
-    console.log("updated");
+    //console.log("updated");
   },
   beforeDestroy() {
-    console.log("beforeDestroy");
+    //console.log("beforeDestroy");
   },
   destroyed() {
-    console.log("destroyed");
+    //console.log("destroyed");
   },
   methods: {
     /**
@@ -177,6 +222,40 @@ export default {
       this.leerTexto.voice = this.voiceList[this.selectedVoice];
 
       this.synth.speak(this.leerTexto);
+    },
+    countdown(minutes, seconds) {
+      var endTime, hours, mins, msLeft, time;
+      var porcentajemaximo;
+      var vm = this;
+      function twoDigits(n) {
+        return n <= 9 ? "0" + n : n;
+      }
+
+      function updateTimer() {
+        msLeft = endTime - +new Date();
+        vm.timer1 = parseInt(((msLeft / 1000) * 100) / porcentajemaximo);
+
+        console.log(parseInt(((msLeft / 1000) * 100) / porcentajemaximo));
+        if (msLeft < 1000) {
+          vm.timer1show = "Se acabó!";
+          vm.timer1 = 0;
+        } else {
+          time = new Date(msLeft);
+          hours = time.getUTCHours();
+          mins = time.getUTCMinutes();
+
+          vm.timer1show =
+            (hours ? hours + ":" + twoDigits(mins) : mins) +
+            ":" +
+            twoDigits(time.getUTCSeconds());
+
+          setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
+        }
+      }
+
+      endTime = +new Date() + 1000 * (60 * minutes + seconds) + 500;
+      porcentajemaximo = 60 * minutes + seconds;
+      updateTimer();
     },
 
     async getData() {
