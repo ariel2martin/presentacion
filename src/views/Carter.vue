@@ -30,6 +30,10 @@
             {{ voice.name }} ({{ voice.lang }})
           </option>
         </select>
+        <v-btn variant="tonal" @click="stoptimer(1)"> stoptimer </v-btn>
+        <v-btn variant="tonal" @click="countdown(timer1show, 1, timer1)">
+          rearrancar
+        </v-btn>
       </v-card-actions>
     </v-card>
     <p></p>
@@ -79,6 +83,10 @@
       <v-row>
         <div class="text-center">
           <v-progress-circular
+            @click="
+              stoptimer(1);
+              countdown(timer2show, 2, timer2);
+            "
             class="v-progress-circular--visible"
             :rotate="90"
             :size="300"
@@ -93,6 +101,10 @@
       <v-row>
         <div class="text-center">
           <v-progress-circular
+            @click="
+              stoptimer(2);
+              countdown(timer1show, 1, timer1);
+            "
             class="v-progress-circular--visible"
             :rotate="90"
             :size="300"
@@ -127,8 +139,10 @@ export default {
       vtemporizador: true,
       timer1: 100,
       timer2: 100,
-      timer1show: "10:0",
-      timer2show: "0:0",
+      timer1show: "2:30",
+      timer2show: "2:00",
+      stoptimer1: 999,
+      stoptimer2: 999,
       lista: [
         {
           titulo: "historia",
@@ -184,7 +198,7 @@ export default {
     };
 
     this.listenForSpeechEvents();
-    this.countdown(0, 30);
+    this.countdown(this.timer1show, 1);
   },
   beforeUpdate() {
     //console.log("beforeUpdate");
@@ -199,6 +213,15 @@ export default {
     //console.log("destroyed");
   },
   methods: {
+    stoptimer(cual) {
+      /*
+      var id = window.setTimeout(function () {}, 0);
+      while (id--) {
+          window.clearTimeout(id); // will do nothing if no timeout with id is present
+      }*/
+      if (cual == 1) window.clearTimeout(this.stoptimer1);
+      else window.clearTimeout(this.stoptimer2);
+    },
     /**
      * React to speech events
      */
@@ -223,7 +246,10 @@ export default {
 
       this.synth.speak(this.leerTexto);
     },
-    countdown(minutes, seconds) {
+    countdown(q, cual, desde = 100) {
+      var minutes = parseInt(q.split(":")[0]);
+      var seconds = parseInt(q.split(":")[1]);
+      console.log(minutes, "-", seconds);
       var endTime, hours, mins, msLeft, time;
       var porcentajemaximo;
       var vm = this;
@@ -231,12 +257,11 @@ export default {
         return n <= 9 ? "0" + n : n;
       }
 
-      function updateTimer() {
+      function updateTimer1() {
         msLeft = endTime - +new Date();
-        vm.timer1 = parseInt(((msLeft / 1000) * 100) / porcentajemaximo);
-
-        console.log(parseInt(((msLeft / 1000) * 100) / porcentajemaximo));
-        if (msLeft < 1000) {
+        vm.timer1 = parseInt(((msLeft / 1000) * desde) / porcentajemaximo);
+        //console.log(vm.timer1);
+        if (msLeft < 1000 || desde == 0) {
           vm.timer1show = "Se acabó!";
           vm.timer1 = 0;
         } else {
@@ -249,13 +274,39 @@ export default {
             ":" +
             twoDigits(time.getUTCSeconds());
 
-          setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
+          vm.stoptimer1 = setTimeout(
+            updateTimer1,
+            time.getUTCMilliseconds() + 500
+          );
         }
       }
+      function updateTimer2() {
+        msLeft = endTime - +new Date();
+        vm.timer2 = parseInt(((msLeft / 1000) * desde) / porcentajemaximo);
+        //console.log(vm.timer1);
+        if (msLeft < 1000 || desde == 0) {
+          vm.timer2show = "Se acabó!";
+          vm.timer2 = 0;
+        } else {
+          time = new Date(msLeft);
+          hours = time.getUTCHours();
+          mins = time.getUTCMinutes();
 
+          vm.timer2show =
+            (hours ? hours + ":" + twoDigits(mins) : mins) +
+            ":" +
+            twoDigits(time.getUTCSeconds());
+
+          vm.stoptimer2 = setTimeout(
+            updateTimer2,
+            time.getUTCMilliseconds() + 500
+          );
+        }
+      }
       endTime = +new Date() + 1000 * (60 * minutes + seconds) + 500;
       porcentajemaximo = 60 * minutes + seconds;
-      updateTimer();
+      if (cual == 1) updateTimer1();
+      else updateTimer2();
     },
 
     async getData() {
